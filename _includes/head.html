@@ -23,3 +23,6 @@
   <link href="https://fonts.googleapis.com/css?family=Average&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
+{% if site.tags != "" %}
+  {% include collecttags.html %}
+{% endif %}

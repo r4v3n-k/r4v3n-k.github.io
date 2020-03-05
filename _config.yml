@@ -19,10 +19,6 @@ paginate: 4
 permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
-tag_permalink_style: pretty
-tag_page_layout: tag_page
-tag_page_dir: /blog/tags/
-
 text:
   pagination:
     newer: 'Newer'
@@ -52,7 +48,6 @@ exclude: [vendor]
 plugins:
     - jekyll-email-protect
     - jekyll-paginate
-    - jekyll-tagging
     - jemoji
 
 # -----------------------------------------------------------------------------
