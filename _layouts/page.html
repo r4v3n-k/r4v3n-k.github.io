@@ -2,11 +2,9 @@
 layout: default
 ---
 <div class="post">
-
-  {% include search.html %}
-
-  {% include tagcloud.html %}
-
+  <div class="top-wrapper">
+    {% include search.html %}
+    <div class="tag-cloud"> {% include tagcloud.html %} </div>
+  </div>
   {{ content }}
-
 </div>

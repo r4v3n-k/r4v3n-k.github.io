@@ -30,6 +30,16 @@ footer {
     bottom: 0px;
   width: 100%;
 
-  a { color: $dark-gray; }
-  a:hover { color: $theme-color; }
+  a {
+    color: $dark-gray;
+    padding-left: 0.5em;
+  }
+  a:hover { color: tomato; }
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
 }

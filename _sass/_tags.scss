@@ -13,43 +13,28 @@
 $icon-tag: "\f02b";
 
 .tag-cloud {
-    margin-bottom: 2em;
-    text-align: left;
-    & > a {
-      display: inline-block;
-      margin-bottom: 1em;
-    }
+  width:500px;
+  text-align: left;
+  & > a {
+    display: inline-block;
+    margin-bottom: 1em;
   }
+
+  .selected {
+    background-color: rgb(222,238,254);
+  }
+}
  
 .tag, .tag-cloud > a {
-  color: gray;
+  color: $blue-1;
   font-family: $font-family;
-  background-color: whitesmoke;
-  border: 1px solid lightgray;
+  font-size: 11pt;
+  background-color: rgb(241,248,255);
+  // border: 1px solid lightgray;
   padding: 0.3em 0.6em;
   border-radius: 0.3em;
   &:hover {
-    color: gray;
     text-decoration: none;
-    background-color: lightgray;
+    background-color: rgb(222,238,254);
   }
- 
-  & > svg {
-    margin-right: 0.4em;
-  }
-
-  &:before {
-    // content: $icon-tag;
-  }
-}
-
-.selected {
-  color: gray;
-  text-decoration: none;
-  background-color: lightgray;
-}
- 
-.post-tags {
-  margin-top: 0.3em;
-  margin-bottom: 0.5em;
 }

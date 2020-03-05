@@ -14,6 +14,16 @@
     line-height: $nav-height;
     letter-spacing: -1px;
     margin-bottom: 0;
+    color: black;
+
+    > strong {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        &:hover {
+            border-top: 2px dashed black;
+            border-bottom: 2px dashed black;
+        }
+    }
 }
 .site-nav {
     float: right;

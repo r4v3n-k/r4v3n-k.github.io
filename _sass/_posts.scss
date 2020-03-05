@@ -3,25 +3,20 @@
 }
 .post-list {
     margin: 0;
+    margin-top: $space-2;
     padding: 0;
     list-style: none;
 
     > li {
         border-bottom: 1px solid $light-gray;
-        padding-bottom: $space-3;
-        padding-top: $space-3;
+        padding-bottom: $space-2;
+        padding-top: $space-2;
     }
 }
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-    margin-bottom: 10px;
-    margin-top: 0;
+    font-size: 14pt;
     color: black;
-    // @include media-query($on-laptop) {
-    //     font-size: 36px;
-    // }
+    font-family: Georgia;
 }
 .post-content {
     h2 {
@@ -41,9 +36,16 @@
     color: $grey-color;
     font-size: $small-font-size;
     font-family: $font-family;
-    margin-bottom: 0px;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    margin-right: 5px;
 }
 .post-link {
     display: block;
     font-size: 42px;
 }
+.post-tags {
+    display: inline-block;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+  }

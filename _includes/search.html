@@ -1,6 +1,10 @@
 <div id="search-demo-container">
-  <input type="text" id="search-input" placeholder="search...">
-  <ul id="results-container"></ul>
+  <div id="wrapper">
+    <input type="text" id="search-input" placeholder="search...">
+    <div id="container-wrapper">
+      <ul id="results-container"></ul>
+    </div>
+  </div>
 </div>
 
 <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
@@ -9,7 +13,7 @@
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '/blog/search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    searchResultTemplate: '<li><div><a href="{url}">{title}<span>{tags}</span></a><div></li>',
     noResultsText: 'No results found',
     limit: 10,
     fuzzy: false,

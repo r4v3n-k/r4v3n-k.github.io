@@ -7,5 +7,9 @@
 {% for temptag in sortedtemptags %}
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
-  <a class="tag" href="/blog/tags/{{ tagname }}">{{ tagname }}</a>
+  {% if page.tag == tagname %}
+    <a class="tag selected" href="/blog/tags/{{ tagname }}">{{ tagname }}</a>
+  {% else %}
+    <a class="tag" href="/blog/tags/{{ tagname }}">{{ tagname }}</a>
+  {% endif %}
 {% endfor %}
