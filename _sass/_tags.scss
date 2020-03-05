@@ -1,0 +1,55 @@
+@mixin font-awesome-icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-weight: 900;
+
+  display: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+$icon-tag: "\f02b";
+
+.tag-cloud {
+    margin-bottom: 2em;
+    text-align: left;
+    & > a {
+      display: inline-block;
+      margin-bottom: 1em;
+    }
+  }
+ 
+.tag, .tag-cloud > a {
+  color: gray;
+  font-family: $font-family;
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+  padding: 0.3em 0.6em;
+  border-radius: 0.3em;
+  &:hover {
+    color: gray;
+    text-decoration: none;
+    background-color: lightgray;
+  }
+ 
+  & > svg {
+    margin-right: 0.4em;
+  }
+
+  &:before {
+    // content: $icon-tag;
+  }
+}
+
+.selected {
+  color: gray;
+  text-decoration: none;
+  background-color: lightgray;
+}
+ 
+.post-tags {
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}

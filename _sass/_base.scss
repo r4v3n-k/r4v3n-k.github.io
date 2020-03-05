@@ -1,0 +1,78 @@
+@charset "UTF-8";
+html{
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+}
+
+html, body {
+  height: auto;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: none;
+}
+
+em img {
+  max-width: 100%;
+  margin-left: 0;
+}
+
+body {
+          box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+    max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $horizontal-spacing-unit;
+    padding-left: $horizontal-spacing-unit;
+    @extend .clearfix;
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+
+.blankbox {
+  background: $theme-color;
+}
+.img_row {
+  /*height: $img-height;*/
+  width: 100%;
+  overflow: hidden;
+  box-sizing:border-box;
+}
+.col {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing:border-box;
+  /*padding: $img-spacing;*/
+}
+.one {
+  width:33.33%;
+}
+.two {
+  width: 66.66%;
+}
+.three {
+  width: 100%;
+}
+.caption {
+  height: 100%;
+  color: $caption-color;
+  text-align: center;
+  vertical-align: middle;
+  font-size: $caption-font-size;
+}

@@ -1,0 +1,38 @@
+- slug: algorithm
+  name: Algorithm
+
+- slug: contest
+  name: Contest
+
+- slug: ps
+  name: PS
+
+- slug: theory
+  name: Theory
+
+- slug: security
+  name: Security
+
+- slug: ctf
+  name: CTF
+
+- slug: wargame
+  name: Wargame
+
+- slug: theory
+  name: Theory
+
+- slug: note
+  name: Note
+
+- slug: tech
+  name: Tech
+
+- slug: ml
+  name: ML
+
+- slug: devops
+  name: DevOps
+
+- slug: docker
+  name: Docker
