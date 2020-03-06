@@ -16,20 +16,77 @@
 .post-title {
     font-size: 14pt;
     color: black;
-    font-family: Georgia;
+    font-weight: 500;
 }
 .post-content {
-    h2 {
-        font-size: 42px;
-        // @include media-query($on-laptop) {
-        //     font-size: 28px;
-        // }
+    margin-bottom: 40px;
+    blockquote {
+        a {
+            color: $grey-color;
+        }
+        a:hover {
+            color: black;
+        }
+        ul {
+            list-style: none;
+            padding: 5px 0;
+            margin: 0;
+            li {
+                padding: 0 15px;
+            }
+        }
     }
-    h3 {
-        font-size: 30px;
-        // @include media-query($on-laptop) {
-        //     font-size: 22px;
-        // }
+    @media only screen and (min-width: 680px) {
+        blockquote {
+            font-style: normal;
+            position: fixed;
+            top: 30%;
+            right: 50px;
+            width: 200px;
+            max-height: 70%;
+            overflow-y: auto;
+            border-radius: 0.3em;
+            border: 1px solid #eee;
+            padding: 0;
+            margin: 0;
+            p {
+                margin: 0;
+                font-style: normal;
+                font-size: 12pt;
+                padding: 0.4em 10px;
+                border-bottom: 1px solid whitesmoke;
+                font-weight: bold;
+                background-color: $grey-color;
+                color: whitesmoke;
+            }
+            
+        }
+    }
+    @media only screen and (max-width: 680px) {
+        blockquote {
+            padding: 10px;
+            margin: 0;
+            font-style: normal;
+            background-color: whitesmoke;
+            border-radius: 0.3em;
+            p {
+                margin: 0;
+                padding: 0.4em;
+                font-style:normal;
+                font-size: 12pt;
+                font-weight: bold;
+            }
+        }
+    }
+    h1 { font-size: 24pt; color: black; font-weight: 500; }
+    h2 { font-size: 20pt; color: black; font-weight: 500; }
+    h3 { font-size: 18pt; color: black; font-weight: 500; }
+    h4 { font-size: 16pt; color: black; font-weight: 500; }
+    h5 { font-size: 14pt; color: black; font-weight: 500; }
+    h6 { font-size: 12pt; color: black; font-weight: 500; }
+    .language-plaintext {
+        background-color: yellow;
+        color: black;
     }
 }
 .post-meta {
