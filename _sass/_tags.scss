@@ -13,8 +13,10 @@
 $icon-tag: "\f02b";
 
 .tag-cloud {
-  width:500px;
+  width: 70%;
   text-align: left;
+  padding-top: 50px;
+  margin: 0 auto;
   & > a {
     display: inline-block;
     margin-bottom: 1em;
