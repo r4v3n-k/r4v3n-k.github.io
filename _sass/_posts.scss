@@ -1,5 +1,9 @@
 .post-header {
     margin-bottom: $vertical-spacing-unit;
+    .post-title {
+        font-size: 24pt;
+        margin: 10px 0;
+    }
 }
 .post-list {
     margin: 0;
@@ -14,9 +18,16 @@
     }
 }
 .post-title {
-    font-size: 14pt;
+    font-weight: bold;
     color: black;
-    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-family: Georgia;
+    > a {
+        color: black;
+        font-size: 14pt;
+        font-weight: 500;
+        font-family: $font-family;
+    }
 }
 .post-content {
     margin-bottom: 40px;
