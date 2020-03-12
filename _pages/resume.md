@@ -2,7 +2,7 @@
 layout: resume
 permalink: /
 title: <strong>Eunjin Kwon</strong>
-description: <a href="">South Korea</a>. gej48443@gmail.com.
+description: South Korea. gej48443@gmail.com.
 
 # profile:
 #   align: right
