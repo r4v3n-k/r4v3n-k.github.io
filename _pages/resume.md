@@ -2,7 +2,7 @@
 layout: resume
 permalink: /
 title: <strong>Eunjin Kwon</strong>
-description: 🇰🇷<a href="">South Korea</a>. gej48443@gmail.com.
+description: <a href="">South Korea</a>. gej48443@gmail.com.
 
 # profile:
 #   align: right
@@ -21,7 +21,6 @@ description: 🇰🇷<a href="">South Korea</a>. gej48443@gmail.com.
 #### **Univ. of Seoul**, Seoul, Korea — _Bachelor's Degree in Computer Science; GPA: 3.68_
 ##### Feb 2016 - Aug 2020
 
----
 
 ### EXPERIENCE
 
@@ -34,7 +33,6 @@ description: 🇰🇷<a href="">South Korea</a>. gej48443@gmail.com.
 
 - **Dev Environment**: Back-end environment based on docker and AWS, standardized the python, nginx, postgresql. Wrote the shell scripts that automatically performs the initial configuration. Also modules for checking packets whenever communicating with clients.
 
----
 
 ### AWARDS
 
@@ -48,7 +46,6 @@ description: 🇰🇷<a href="">South Korea</a>. gej48443@gmail.com.
 
 - Developed back-end of mobile game using django, postgresql, and nginx in AWS.
 
----
 
 ### PROJECTS
 
@@ -82,7 +79,6 @@ description: 🇰🇷<a href="">South Korea</a>. gej48443@gmail.com.
 - Also they were sorted by time, and artifacts, incident indicators selected based on the research conducted together, are classified in a specific color.
 - Using pyqt5 and various open-source parser with python.
 
----
 
 ### SKILLS
 - **C++** : Developable
