@@ -9,7 +9,7 @@ description: South Korea. gej48443@gmail.com.
 
 #### **Univ. of Seoul**, Seoul, Korea — _Bachelor's Degree in Computer Science; GPA: 3.68_
 
-##### Feb 2016 - Aug 2020
+##### Feb 2016 - Present <!-- Aug 2020 -->
 
 ### EXPERIENCE
 
