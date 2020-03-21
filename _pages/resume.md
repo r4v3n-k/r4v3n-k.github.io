@@ -69,7 +69,7 @@ description: South Korea. gej48443@gmail.com.
 
 ##### Sept 2018 - Dec 2018
 
-- Developed an tool that shows meaningful artifacts by parsing windows artifacts and guessing traces of hacking.
+- Developed a tool that shows meaningful artifacts by parsing windows artifacts and guessing traces of hacking.
 - Also they were sorted by time, and artifacts, incident indicators selected based on the research conducted together, are classified in a specific color.
 - Using pyqt5 and various open-source parser with python.
 
