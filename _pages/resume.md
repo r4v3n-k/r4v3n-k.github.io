@@ -17,11 +17,11 @@ description: South Korea. gej48443@gmail.com.
 
 ##### Mar 2018 - July 2019
 
-- **Shoot the block**: Mobile game that gets score by matching tetromino and removing lines. Designed a database and developed server APIs for communicating with client using django, postgresql.
+- **Shoot the block**: A mobile game that receives scores by matching tetromino and removing lines. Designed a database and developed server APIs for communicating with clients using django, postgresql.
 
-- **Walk and Work**: Mobile game that simulates the growth of a company by being compensated from various contents, some of which include for users to exercise in reality. Designed a database and developed server APIs and a pedometer API that calculates calories separately when users were running or walking.
+- **Walk and Work**: A mobile game that simulates the growth of a company by being compensated from various contents, some of which includes users to exercise this in reality. Designed a database and developed server APIs and a pedometer API that calculates calories burned  when the user was walking or running.
 
-- **Dev Environment**: Back-end environment based on docker and AWS, standardized the python, nginx, postgresql. Wrote the shell scripts that automatically performs the initial configuration. Also modules for checking packets whenever communicating with clients.
+- **Dev Environment**: A back-end environment that is based on docker and AWS, which standardizes the python, nginx, and postgresql. Wrote the shell scripts that automatically perform the initial configuration. Including the modules for checking packets whenever communicating with clients.
 
 ### AWARDS
 
@@ -35,7 +35,7 @@ description: South Korea. gej48443@gmail.com.
 
 ##### Mar 2018 - Dec 2018
 
-- Developed back-end of mobile game using django, postgresql, and nginx in AWS.
+- Developed the back-end of mobile games using django, postgresql, and nginx in AWS.
 
 ### PROJECTS
 
@@ -50,34 +50,32 @@ description: South Korea. gej48443@gmail.com.
 
 ##### Nov 2019 - Dec 2019
 
-- Re-designed the suggested neural network, in which accuracy for training MNIST increased from 97% to 99% by being added pooling layer, dropout, CNN.
+- Re-designed the suggested neural network, in which accuracy for training MNIST increased from 97% to 99% by adding a pooling layer, dropout, and CNN.
 
 #### [**Implementing Multi-layer Perceptron with C++**, Univ. of Seoul — _Personal_](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI/03)
 
 ##### Sept 2019 - Oct 2019
 
-- Developed a simple machine learning program that trains the stuff like xor gate and donut shape graph and shows error rate per iteration in graph, and the relation of input and output linearly in 2 dimension space.
+- Developed a simple machine learning program, which trains the xor gate and donut shape graph, using Qt5.
 
 #### [**Wi-Fi Monitor Tool**, Korea Information Technology Research Institute — _Personal_](https://github.com/ke2ek/BoB-7th/tree/master/stage-3/my_airodump)
 
 ##### Jan 2019 - Feb 2019
 
 - Developed an wireless network scan program with Qt5 by referring to the open source 'airodump-ng' that has CLI interface.
-- It shows connected stations grouped by an access point at a glance in the GUI interface, which grows less visual inconvenience than the existing tool.
+- It shows connected stations grouped by an access point at a glance in the GUI interface, which becomes less visual inconvenient than the existing tool.
 
 #### [**Precise Analysis of an Attacker's Behavior using Offensive Research**, Korea Information Technology Research Institute — _Group (6 people)_](https://github.com/ke2ek/BoB-7th/tree/master/stage-2/MonkeySpanner)
 
 ##### Sept 2018 - Dec 2018
 
-- Developed a tool that shows meaningful artifacts by parsing windows artifacts and guessing traces of hacking.
-- Also they were sorted by time, and artifacts, incident indicators selected based on the research conducted together, are classified in a specific color.
-- Using pyqt5 and various open-source parser with python.
-
+- Developed a tool, which shows meaningful artifacts by parsing windows artifacts and guessing traces of hacking, using pyqt5 and various open-source parsers.
+- They are sorted by time. Artifacts, that is incident indicators selected based on the research conducted together, are classified by a specific color.
 
 ### SKILLS
 
-- **C++** : Developable
-- **Python** : Developable
-- **Java** : Developable
-- **Docker** : have even used Swarm. but not proficient.
-- **AWS** : have even used EC2, Route 53. but not proficient.
+- C++ : Intermediate
+- Python :Intermediate
+- Java : Intermediate
+- Docker :Experience in  Swarm. Intermediate
+- AWS : Experience in  EC2, Route 53. Intermediate
