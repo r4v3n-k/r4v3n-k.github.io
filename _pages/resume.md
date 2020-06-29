@@ -74,8 +74,8 @@ description: South Korea. gej48443@gmail.com.
 
 ### SKILLS
 
-- C++ : Intermediate
-- Python :Intermediate
-- Java : Intermediate
-- Docker :Experience in  Swarm. Intermediate
-- AWS : Experience in  EC2, Route 53. Intermediate
+- C++: Intermediate
+- Python: Intermediate
+- Java: Intermediate
+- Docker: Experience in  Swarm. Intermediate
+- AWS: Experience in  EC2, Route 53. Intermediate
