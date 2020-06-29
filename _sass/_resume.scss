@@ -29,7 +29,7 @@
 
 .resume-content {
     // h3: title, h4: type, h5: desc
-    h3,h4,h5,p {
+    h3,h4,h5,p,li {
         font-size: 10pt;
     }
 
@@ -39,13 +39,16 @@
         // font-size: 11pt;
         letter-spacing: 0.5px;
         margin: 0;
-        margin-bottom: 1em;
-        padding-top: 50px;
+        margin-bottom: .5em;
+        padding-top: 20px;
         line-height: 1.5em;
-        border-bottom: 1px solid $blue-1;
+        border-bottom: 1.5px solid $blue-1;
     }
 
     h4 {
+        max-width: 70%;
+        display: inline-block;
+        margin-top: .5em;
         font-family: $font-family;
         // font-size: 12pt;
         color: black;
@@ -53,12 +56,18 @@
     }
     
     h5 {
+        display: inline-block;
+        float: right;
+        margin-top: .5em;
         font-family: $font-family;
         // font-size: 11pt;
-        margin-top: 0;
     }
 
     p {
+        margin-bottom: .5rem;
+    }
+
+    ul {
         margin-bottom: .5rem;
     }
 }
