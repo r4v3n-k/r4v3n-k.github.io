@@ -2,24 +2,51 @@
 layout: resume
 permalink: /
 title: <strong>Eunjin Kwon</strong>
-description: South Korea. gej48443@gmail.com.
+description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</span><br><a href="https://github.com/ke2ek" style="color:black;">https://github.com/ke2ek</a>
 ---
 
 ### EDUCATION
 
-#### **Univ. of Seoul**, Seoul, Korea — _Bachelor's Degree in Computer Science; GPA: 3.68_
+#### **Univ. of Seoul**, Seoul, Korea — Bachelor's Degree in Computer Science; GPA: 3.68
 
+<!-- 나중에 졸업년도,월(풀네임)만 적을 것 -->
 ##### Feb 2016 - Present
 
-### EXPERIENCE
+<!-- 대외 활동, PROJECTS 는 자신이 주도한 프로젝트를 의미 -->
+### CAMPUS INVOLVEMENT
 
-#### [**PlayerLab**, Seoul, Korea — _Software Engineer_](https://www.playerlab.co.kr/?lang=en)
+#### _Selected Participant_**Global Indie Game Development Contest**, Korea Game Developer Association
 
 ##### Mar 2018 - July 2019
 
-- **Dev Environment.** A back-end environment with Docker and AWS, which standardizes the python, nginx, and postgresql. Wrote the shell scripts for the initial configuration and APIs for communication.
+- Built a server of a mobile game with Docker, which standardizes the Django, Nginx, and PostgreSQL.
+- Developed a pedometer API that counts steps using velocity and calculates calories burned when a user was walking or running.
 
-- **Walk and Work.** A mobile simulation game that grows of a company by being compensated from various contents, some of which take users to exercise in reality. Developed the pedometer API that counts steps using velocity and calculates calories burned when a user was walking or running.
+#### _Selected Participant_[**Best of the Best**, Korea Information Technology Research Institute](https://github.com/ke2ek/BoB-7th)
+
+##### Sept 2018 - Feb 2019
+
+- Developed a reversing tool with PyQt5. It analyzes Windows Artifacts using public incident indicators.
+- Developed a wireless network scan tool with Qt5 by referring to the open-source, Airodump-ng.
+
+### RELEVANT COURSEWORK
+
+#### [**Capstone Design in Computer Science**: Docker; Machine Learning; Natural Language Processing](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-Capstone)
+
+- Designed system structure based on docker. Developed the stock recommendation system with Khaiii, Word2Vec, and Naver News API.
+
+#### [**Cloud Computing**: B-Tree; Skiplist](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-CloudComputing)
+
+- Implemented key-value library with skiplist or b-tree, and tested performances in multi-thread.
+
+#### [**Software Application**: Flask; Clustering](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-EngineForGTD)
+
+- Developed a web application, which automatically clustering the dataset, Global Terrorism Database(GTD), and visualizes the result.
+
+#### [**Artificial Intelligence**: Tensorflow; Deep Learning](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI)
+
+- Implemented Multi-Layer Perceptron with C++ to train XOR Gate and Donut-Shaped coordinates.
+- Re-designed the suggested neural network, in which accuracy for training MNIST increased from 97% to 99% by adding a pooling layer, dropout, and CNN.
 
 <!-- ### AWARDS
 
@@ -27,66 +54,13 @@ description: South Korea. gej48443@gmail.com.
 
 ##### Oct 2019 - Nov 2019
 
-- Developed a program that visualizes the result of analysis using python with pyqt5.
-
-#### **Global Indie Game Development Contest**, Korea Game Developer Association — _1st Prize_
-
-##### Mar 2018 - Dec 2018
-
-- Developed the back-end of mobile games using django, postgresql, and nginx in AWS. -->
-
-### PROJECTS
-
-#### [**Real-time Stock Recommendation System with Machine Learning**, Univ. of Seoul](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-Capstone)
-
-##### Mar 2020 - Jun 2020
-
-- Designed system structure. Developed recommendation system with Morphological Analysis, Word2Vec.
-
-#### [**Parallel Test of Key Value Store Library with Skiplist**, Univ. of Seoul](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-CloudComputing)
-
-##### Mar 2020 - Jun 2020
-
-- Implemented key-value library with skiplist or b-tree, and tested performances in multi-thread.
-
-#### [**Clustering analysis in the aggressive side**, Univ. of Seoul](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-EngineForGTD)
-
-##### Sept 2019 - Dec 2019
-
-- Preprocessed the dataset, Global Terrorism Database, and researched how clustering would be performed.
-- Developed an web application, which automatically analyzes the dataset and visualizes the result of clustering.
-
-#### [**MNIST Performance Enhancements**, Univ. of Seoul](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI/04)
-
-##### Nov 2019 - Dec 2019
-
-- Re-designed the suggested neural network, in which accuracy for training MNIST increased from 97% to 99% by adding a pooling layer, dropout, and CNN.
-
-#### [**Implementing Multi-layer Perceptron with C++**, Univ. of Seoul](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI/03)
-
-##### Sept 2019 - Oct 2019
-
-- Developed a simple machine learning program, which trains the xor gate and donut shape graph, using Qt5.
-
-#### [**Wi-Fi Monitor Tool**, Korea Information Technology Research Institute](https://github.com/ke2ek/BoB-7th/tree/master/stage-3/my_airodump)
-
-##### Jan 2019 - Feb 2019
-
-- Developed an wireless network scan program with Qt5 by referring to the open source 'airodump-ng'.
-- It shows connected stations grouped by an access point at a glance in the GUI interface, which becomes less visual inconvenient than the existing tool.
-
-#### [**Precise Analysis of an Attacker's Behavior using Offensive Research**, Korea Information Technology Research Institute](https://github.com/ke2ek/BoB-7th/tree/master/stage-2/MonkeySpanner)
-
-##### Sept 2018 - Dec 2018
-
-- Developed a reversing tool using pyqt5 and various open-source parsers.
-- It analyzes windows artifacts with incident indicators selected based on the research conducted together.
+- Developed a program that visualizes the result of analysis using python with pyqt5. -->
 
 ### SKILLS
 
-#### **Language.** C/C++; Python; Java;
+#### **Programming.** C/C++; Python; Java
 
-#### **Technology.** Qt; Django; Celery; Flask; Redis; PostgreSQL; Docker; Swarm; AWS;
+#### **Technology.** Qt; Django; Celery; Flask; Redis; PostgreSQL; Docker; Swarm; AWS
 
 <!-- - C++: Intermediate
 - Python: Intermediate

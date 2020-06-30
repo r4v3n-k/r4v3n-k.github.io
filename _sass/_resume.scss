@@ -1,4 +1,5 @@
 .resume-header {
+    font-family: $resume-font-family;
     color: black;
 }
 .resume-list {
@@ -14,29 +15,32 @@
 }
 
 .resume-title {
-    font-size: 24pt;
-    letter-spacing: -1px;
-    line-height: 1;
-    margin: 0;
+    display: inline-block;
+    margin: 1rem 0;
+    font-family: $resume-font-family;
+    font-size: 32pt;
     color: black;
 }
 
 .resume-description {
-    margin: .5em 0;
-    font-size: 10pt;
-    padding-left: .2em;
+    font-family: $resume-font-family;
+    display: inline-block;
+    float: right;
+    text-align: right;
+    margin: 1rem 0;
 }
 
 .resume-content {
     // h3: title, h4: type, h5: desc
     h3,h4,h5,p,li {
-        font-size: 10pt;
+        font-size: 10.5pt;
+        font-family: $resume-font-family;
+        a { color: black; }
     }
 
     h3 {
         font-weight: bold;
         color: $blue-1;
-        // font-size: 11pt;
         letter-spacing: 0.5px;
         margin: 0;
         margin-bottom: .5em;
@@ -46,21 +50,19 @@
     }
 
     h4 {
-        width: 80%;
         display: inline-block;
         margin-top: .5em;
-        font-family: $font-family;
-        // font-size: 12pt;
         color: black;
-        a { color: black; }
+        em {
+            display: block;
+            font-style: normal;
+        }
     }
     
     h5 {
         display: inline-block;
-        float: right;
         margin-top: .5em;
-        font-family: $font-family;
-        // font-size: 11pt;
+        float: right;
     }
 
     p {
