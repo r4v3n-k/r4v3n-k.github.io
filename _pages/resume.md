@@ -19,8 +19,8 @@ description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</
 
 ##### Mar 2018 - July 2019
 
-- Implemented a pedometer API that counts steps using velocity and calculates calories burned when a user was walking or running.
-- Built a server of a mobile game, which standardizes the Django, Nginx, and PostgreSQL, in Ubuntu.
+- Implemented a module, which counts steps using velocity and calculates calories burned when a user was walking or running, with Android SDK.
+- Built a server of a mobile game that standardizes the Django, Nginx, and PostgreSQL in Ubuntu.
 - Wrote the required shell scripts for the initial configuration and server APIs.
 - Deployed to beta-version using Docker Swarm.
 
@@ -37,7 +37,7 @@ description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</
 #### [**Capstone Design in Computer Science**: Docker; Machine Learning; Natural Language Processing](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-Capstone)
 
 - Built a server of a web application for the Stock Recommendation System with Docker in Ubuntu.
-- Wrote the required algorithm to recommend with Khaiii, Word2Vec, and Naver News API.
+- Wrote the required algorithm to recommend stocks with Khaiii, Word2Vec, and Naver News API.
 
 #### [**Cloud Computing**: B-Tree; Skiplist](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-CloudComputing)
 
