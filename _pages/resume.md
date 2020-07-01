@@ -1,13 +1,13 @@
 ---
 layout: resume
 permalink: /
-title: <strong>Eunjin Kwon</strong>
+title: <strong>Eunjin Kwon</strong><p>Software Engineer</p>
 description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</span><br><a href="https://github.com/ke2ek" style="color:black;">https://github.com/ke2ek</a>
 ---
 
 ### EDUCATION
 
-#### **Univ. of Seoul**, Seoul, Korea — Bachelor's Degree in Computer Science; GPA: 3.68
+#### **Univ. of Seoul**, Seoul, Korea — B.S in Computer Science; GPA: 3.6/4.5
 
 <!-- 나중에 졸업년도,월(풀네임)만 적을 것 -->
 ##### Feb 2016 - Present
@@ -19,21 +19,25 @@ description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</
 
 ##### Mar 2018 - July 2019
 
-- Built a server of a mobile game with Docker, which standardizes the Django, Nginx, and PostgreSQL.
-- Developed a pedometer API that counts steps using velocity and calculates calories burned when a user was walking or running.
+- Implemented a pedometer API that counts steps using velocity and calculates calories burned when a user was walking or running.
+- Built a server of a mobile game, which standardizes the Django, Nginx, and PostgreSQL, in Ubuntu.
+- Wrote the required shell scripts for the initial configuration and server APIs.
+- Deployed to beta-version using Docker Swarm.
 
 #### _Selected Participant_[**Best of the Best**, Korea Information Technology Research Institute](https://github.com/ke2ek/BoB-7th)
 
 ##### Sept 2018 - Feb 2019
 
-- Developed a reversing tool with PyQt5. It analyzes Windows Artifacts using public incident indicators.
-- Developed a wireless network scan tool with Qt5 by referring to the open-source, Airodump-ng.
+- Completed a course about information security, and worked on a team as a project manager in 4 months.
+- Developed a reversing tool, which analyzes Windows Artifacts using public incident indicators, with PyQt5.
+- Implemented a wireless network scan program with Qt5 to improve the inconvenience of the open-source, Airodump-ng.
 
 ### RELEVANT COURSEWORK
 
 #### [**Capstone Design in Computer Science**: Docker; Machine Learning; Natural Language Processing](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-Capstone)
 
-- Designed system structure based on docker. Developed the stock recommendation system with Khaiii, Word2Vec, and Naver News API.
+- Built a server of a web application for the Stock Recommendation System with Docker in Ubuntu.
+- Wrote the required algorithm to recommend with Khaiii, Word2Vec, and Naver News API.
 
 #### [**Cloud Computing**: B-Tree; Skiplist](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-CloudComputing)
 
@@ -41,12 +45,12 @@ description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</
 
 #### [**Software Application**: Flask; Clustering](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-EngineForGTD)
 
-- Developed a web application, which automatically clustering the dataset, Global Terrorism Database(GTD), and visualizes the result.
+- Developed a web application for clustering and visualizing the data from the Global Terrorism Database.
 
 #### [**Artificial Intelligence**: Tensorflow; Deep Learning](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI)
 
 - Implemented Multi-Layer Perceptron with C++ to train XOR Gate and Donut-Shaped coordinates.
-- Re-designed the suggested neural network, in which accuracy for training MNIST increased from 97% to 99% by adding a pooling layer, dropout, and CNN.
+- Re-designed the suggested neural network. The accuracy of training MNIST increased from 97% to 99% by adding a pooling layer, dropout, and CNN.
 
 <!-- ### AWARDS
 
@@ -58,9 +62,9 @@ description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</
 
 ### SKILLS
 
-#### **Programming.** C/C++; Python; Java
+#### **Programming.** C/C++; Python; Java;
 
-#### **Technology.** Qt; Django; Celery; Flask; Redis; PostgreSQL; Docker; Swarm; AWS
+#### **Technology.** Git; Qt; Django; Flask; Celery; Redis; PostgreSQL; Docker; Amazon Web Services
 
 <!-- - C++: Intermediate
 - Python: Intermediate

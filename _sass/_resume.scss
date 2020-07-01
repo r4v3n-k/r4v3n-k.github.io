@@ -1,6 +1,12 @@
 .resume-header {
     font-family: $resume-font-family;
     color: black;
+    p {
+        margin-bottom: 0;
+        font-size: 12pt;
+        padding-left: .2em;
+        color: black;
+    }
 }
 .resume-list {
     margin: 0;
@@ -16,9 +22,9 @@
 
 .resume-title {
     display: inline-block;
-    margin: 1rem 0;
+    margin: .5rem 0;
     font-family: $resume-font-family;
-    font-size: 32pt;
+    font-size: 24pt;
     color: black;
 }
 
