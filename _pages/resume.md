@@ -7,7 +7,7 @@ description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</
 
 ### EDUCATION
 
-#### **Univ. of Seoul**, Seoul, Korea — B.S in Computer Science; GPA: 3.6/4.5
+#### **Univ. of Seoul**, Seoul, Republic of Korea — B.S in Computer Science; GPA: 3.6/4.5
 
 <!-- 나중에 졸업년도,월(풀네임)만 적을 것 -->
 ##### Feb 2016 - Present
