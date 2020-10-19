@@ -17,7 +17,7 @@ description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</
 
 ##### July 2020 - Oct 2020
 
-- Improved some pieces of the existing Python and Basel code for training.
+- Improved some pieces of the existing Python and Bazel code for training.
 - Experimented on noise and speed augmentation for the Speech-To-Text model.
 - Developed a few utility tools that contain normalization of sound datasets, parameter search for evaluation of models, evaluation result comparision, and so on.
 
@@ -51,7 +51,7 @@ description: <span>Republic of Korea</span><br></span><span>gej48443@gmail.com</
 
 #### [**Software Application**. Flask; Clustering](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-EngineForGTD)
 
-- Developed a website that visualizes and clusters the data from the Global Terrorism Database.
+- Developed a website visualizing and clustering the data from the Global Terrorism Database.
 
 #### [**Artificial Intelligence**. Tensorflow; Deep Learning](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI)
 
