@@ -6,7 +6,7 @@ $base-font-size: 16px !default;
 $small-font-size:  0.875rem !default;
 $bold-font-weight: bold !default;
 $font-family: 'PT Sans', sans-serif;
-$resume-font-family: "Georgia";
+$resume-font-family: "Helvetica"; //"Georgia";
 $line-height: 1.5 !default;
 $heading-font-family: Helvetica, sans-serif !default;
 $heading-font-weight: 900 !default;
@@ -85,6 +85,7 @@ $breakpoint-md: '(min-width: 52em)';
 $breakpoint-xl: '(min-width: 96em)';
 
 // Whitespace
+$space-0: .3rem !default;
 $space-1: .5rem !default;
 $space-2: 1rem !default;
 $space-3: 2rem !default;
