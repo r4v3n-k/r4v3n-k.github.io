@@ -1,59 +1,104 @@
 ---
 layout: resume
 permalink: /
-title: <b>EUNJIN KWON</b><p><b>gej48443@gmail.com</b></p>
-description: <a href="https://github.com/ke2ek" style="color:black;"><span><b>https://github.com/ke2ek</b></span></a><br><span><b>Programming Languages.</b>&nbsp;C++; Python3</span><br><span><b>Skills.</b>&nbsp;Linux; Git; Bazel; Docker; Amazon Web Service</span>
+title: EUNJIN KWON
+description: gej48443@gmail.com
 ---
 
 ### EDUCATION
 
-#### **Univ. of Seoul**, Seoul, South Korea — B.S in Computer Science; GPA: 3.68
+<div class="resume-item-title">
+    <h4>University of Seoul.<span> Seoul, South Korea</span></h4>
+    <h5>Mar. 2016 - Feb. 2021</h5>
+</div>
 
-##### Feb. 2021
+- B.S. in Computer Science and Engineering
+- Major GPA: 3.73/4.50
 
 ### WORK EXPERIENCE
 
-#### **Skelter Labs**. Seoul, South Korea — Software Engineer Intern
+<div class="resume-item-title">
+    <h4>Hyperconnect.<span> Seoul, South Korea — Machine Learning Software Engineer Intern</span></h4>
+    <h5>Mar. 2021 - Apr. 2021</h5>
+</div>
 
-##### Aug. 2020 -  Nov. 2020
+- Worked in ML Platform team to develop the chatbot evaluation system introduced by Facebook AI Research, where the system generates data using crowdsourcing such as AWS Mturk.
+- Designed REST API and implemented the asynchronous server with FastAPI, MySQL, and Nginx Unit.
 
-- Developed a sound normalization tool for noise augmentation with Python.
-- Increased the accuracy of Speech-To-Text model by 0.03% by preprocessing noise dataset.
-- Implemented the python script which automatically compares the evaluations of several diarization models.
+<div class="resume-item-title">
+    <h4>Skelter Labs.<span> Seoul, South Korea — Software Engineer Intern</span></h4>
+    <h5>Aug. 2020 -  Nov. 2020</h5>
+</div>
 
-#### **Playerlab**. Seoul, South Korea — Software Engineer
-
-##### Mar. 2018 - Jul. 2019
-
-- Wrote the required server APIs with Django, and deployed beta-version on Swarm.
-- Built the server which standardizes Nginx, PostgreSQL, and Docker for mobile games.
-- Implemented the pedometer module calculating calories using the velocity with Android SDK.
-
+- Worked in AI Lab to improve the end-to-end machine learning model using real-world data.
+- Experimented with data augmentation for noise by implementing the sound normalization tool on Spark.
+- Increased the accuracy of Speech-To-Text model by 0.03% by converting the noise preprocess part.
+- Developed the python tool that runs several diarization models in parallel in ASR comparison experiment.
 
 ### CAMPUS INVOLVEMENT
 
-#### [**Best of the Best**. Korea Information Technology Research Institute](https://github.com/ke2ek/BoB-7th)
+<div class="resume-item-title">
+    <h4>Best of the Best.<span> Korea Information Technology Research Institute</span></h4>
+    <h5>Sep. 2018 - Feb. 2019</h5>
+</div>
 
-##### Sep. 2018 - Feb. 2019
+- Selected as one of 160 participants nationwide for a 6-month professional program for the information security leaders training, attended lectures, served as a project manager in the security project on tracing attackers with system files in Windows, and introduced our project at a conference in Hong Kong.
 
-- Selected as one of 160 participants nationwide for an 6-month professional program for the information security leaders training, attended lectures, served as a project manager in the project related with security, and introduced our project at a conference in Hong Kong.
-<!-- - Implemented the WLAN scan tool with Qt5 to improve the open-source, Airodump-ng, visually. -->
-<!-- - Developed the reversing tool analyzing Windows Artifacts using public incident indicators with Python. -->
+### COURSE PROJECTS
 
-### RELEVANT COURSEWORK
+<div class="resume-item-title">
+    <a href="https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-Capstone">
+        <h4>Stock Recommendation Web Application.<span> AWS; NLP; Word2Vec; Django; Celery; RabbitMQ; Docker</span></h4>
+    </a>
+</div>
 
-#### [**Capstone Design in Computer Science**. Django; Celery; RabbitMQ; Docker; Word2Vec](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-Capstone)
+- Implemented algorithms that suggest stocks with keywords similar to users in news articles.
+- Designed and developed the back-end system that processes large text data in asynchronous works by transferring requests to the message queue.
+- Selected our project as a case of excellence based on creativity and high achievement among 13 teams.
 
-- Selected our team project that recommends stocks with similar keywords in Naver News as a case of excellence based on creativity and high-achievement.
-- Designed and built the server to process requests from clients and data from external sources distributively using Celery and RabbitMQ on Docker.
+<div class="resume-item-title">
+    <a href="https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-CloudComputing">
+        <h4>Key-Value Library For Parallel.<span> B-Tree; Skip list</span></h4>
+    </a>
+</div>
 
+- Implemented B-Tree algorithm to insert, delete, and search key-value pairs on multi-thread in C.
+- Improved the performance up to 78% in testing 1 million keys on 4 CPUs by converting B-Tree to Skip list.
 
-#### [**Cloud Computing**. B-Tree; Skiplist; Redis; Flask; AWS](https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-CloudComputing)
+<div class="resume-item-title">
+    <a href="https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI">
+        <h4>Multi-Layer Perceptron.<span> Neural Network; Qt5; QtCreator</span></h4>
+    </a>
+</div>
 
-- Improved the performance on multi-thread of key-value library written with C-lang by 60% by changing the data structure, B-Tree, to Skiplist.
-- Developed a simple web application with Redis and Flask in AWS.
+- Implemented a binary classifier using Dynamic Programming to memorize the gradient of weight in C++.
+- Developed GUI program that configures layers and shows error rate per iteration as a graph after training.
 
-#### [**Artificial Intelligence**. Tensorflow; Deep Learning](https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI)
+### INDIVIDUAL PROJECTS
 
-- Implemented the multi-layer perceptron to classify 8 coordinates in 2-dimension with C++.
-- Increased the accuracy of MNIST training by 2.3% by adding pooling layers, dropout layers, and CNNs.
+<div class="resume-item-title">
+    <a href="https://www.gigdc.or.kr/product/item.php?it_id=1544421692&ca_id=101020&findType=&findWord=&page=&sort1=&sort2=">
+        <h4>Walk and Work.<span> AWS; Django; NginX; PostgreSQL; Docker Swarm; Android</span></h4>
+    </a>
+</div>
+
+- Provided data operation APIs to create, read, update, and delete to clients for mobile games.
+- Built service auto-scaling environment in web application using container orchestration tools.
+- Implemented the pedometer module that also offers the change of user's calorie in Android SDK.
+
+<div class="resume-item-title">
+    <a href="https://github.com/ke2ek/BoB-7th/tree/master/stage-3/my_airodump">
+        <h4>My Airodump-ng.<span> Qt5; QtCreator</span></h4>
+    </a>
+</div>
+
+- Developed wireless network scanning tool to better demonstrate the relationship between the access point and the host in Airodump-ng, an open source for penetration testing.
+
+### TECHNICAL SKILLS
+
+<div id="skillset">
+    <h4>OS.<span> Mac OSX, Linux, Window</span></h4>
+    <h4>Language.<span> Python, C/C++, JavaScript, Java, Assembly</span></h4>
+    <h4>Database.<span> MySQL, PostgreSQL, Redis</span></h4>
+    <h4>Framework.<span> Django, Flask, FastAPI, Qt5, Tensorflow</span></h4>
+</div>
