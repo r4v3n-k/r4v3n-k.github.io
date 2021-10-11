@@ -18,6 +18,13 @@ description: gej48443@gmail.com
 ### WORK EXPERIENCE
 
 <div class="resume-item-title">
+    <h4>Naver Labs.<span> Seoul, South Korea — Software Engineer</span></h4>
+    <h5>Sep. 2021 - Present</h5>
+</div>
+
+- Worked in Platform Engineering team to develop the multi-robot intelligence system that provides the web platform for a human to control multiple robots at the same time in a cloud environment.
+
+<div class="resume-item-title">
     <h4>Hyperconnect.<span> Seoul, South Korea — Machine Learning Software Engineer Intern</span></h4>
     <h5>Mar. 2021 - Apr. 2021</h5>
 </div>
@@ -52,18 +59,9 @@ description: gej48443@gmail.com
     </a>
 </div>
 
-- Implemented algorithms that suggest stocks with keywords similar to users in news articles.
-- Designed and developed the back-end system that processes large text data in asynchronous works by transferring requests to the message queue.
+- Implemented algorithms to list stocks that are closest to user's keywords.
+- Developed the back-end to handle large text data asynchronously using a message queue and workers.
 - Selected our project as a case of excellence based on creativity and high achievement among 13 teams.
-
-<div class="resume-item-title">
-    <a href="https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-CloudComputing">
-        <h4>Key-Value Library For Parallel.<span> B-Tree; Skip list</span></h4>
-    </a>
-</div>
-
-- Implemented B-Tree algorithm to insert, delete, and search key-value pairs on multi-thread in C.
-- Improved the performance up to 78% in testing 1 million keys on 4 CPUs by converting B-Tree to Skip list.
 
 <div class="resume-item-title">
     <a href="https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI">
@@ -98,7 +96,7 @@ description: gej48443@gmail.com
 
 <div id="skillset">
     <h4>OS.<span> Mac OSX, Linux, Window</span></h4>
-    <h4>Language.<span> Python, C/C++, JavaScript, Java, Assembly</span></h4>
+    <h4>Language.<span> Go, Python, C/C++, JavaScript, Java</span></h4>
     <h4>Database.<span> MySQL, PostgreSQL, Redis</span></h4>
     <h4>Framework.<span> Django, Flask, FastAPI, Qt5, Tensorflow</span></h4>
 </div>
