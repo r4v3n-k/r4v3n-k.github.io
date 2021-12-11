@@ -69,7 +69,6 @@
                 background-color: $grey-color;
                 color: whitesmoke;
             }
-            
         }
     }
     @media only screen and (max-width: 680px) {
@@ -88,15 +87,15 @@
             }
         }
     }
-    h1 { font-size: 18pt; color: black; font-weight: 500; }
-    h2 { font-size: 14pt; color: black; font-weight: 500; }
-    h3 { font-size: 12pt; color: black; font-weight: 500; }
-    h4 { font-size: 11pt; color: black; font-weight: 500; }
-    h5 { font-size: 10pt; color: black; font-weight: 500; }
-    h6 { font-size: 9pt; color: black; font-weight: 500; }
-    .language-plaintext {
-        background-color: yellow;
-        color: black;
+    h1 { font-size: 18pt; color: black; }
+    h2 { font-size: 14pt; color: black; }
+    h3 { font-size: 13pt; color: black; }
+    h4 { font-size: 12pt; color: black; }
+    h5 { font-size: 12pt; color: black; font-weight: 500; }
+    h6 { font-size: 10pt; color: black; font-weight: 500; }
+    .language-plaintext { // notion style
+        background-color: rgb(237,237,237);
+        color: rgb(219,97,92);
     }
 }
 .post-meta {
