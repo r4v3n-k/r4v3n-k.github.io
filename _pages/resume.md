@@ -54,7 +54,7 @@ description: gej48443@gmail.com
 ### COURSE PROJECTS
 
 <div class="resume-item-title">
-    <a href="https://github.com/ke2ek/CourseProjects/tree/master/2020-1st-Term-Capstone">
+    <a href="https://github.com/r4v3n-k/CourseProjects/tree/master/2020-1st-Term-Capstone">
         <h4>Stock Recommendation Web Application.<span> AWS; NLP; Word2Vec; Django; Celery; RabbitMQ; Docker</span></h4>
     </a>
 </div>
@@ -64,7 +64,7 @@ description: gej48443@gmail.com
 - Selected our project as a case of excellence based on creativity and high achievement among 13 teams.
 
 <div class="resume-item-title">
-    <a href="https://github.com/ke2ek/CourseProjects/tree/master/2019-2nd-Term-basicAI">
+    <a href="https://github.com/r4v3n-k/CourseProjects/tree/master/2019-2nd-Term-basicAI">
         <h4>Multi-Layer Perceptron.<span> Neural Network; Qt5; QtCreator</span></h4>
     </a>
 </div>
@@ -85,7 +85,7 @@ description: gej48443@gmail.com
 - Implemented the pedometer module that also offers the change of user's calorie in Android SDK.
 
 <div class="resume-item-title">
-    <a href="https://github.com/ke2ek/BoB-7th/tree/master/stage-3/my_airodump">
+    <a href="https://github.com/r4v3n-k/BoB-7th/tree/master/stage-3/my_airodump">
         <h4>My Airodump-ng.<span> Qt5; QtCreator</span></h4>
     </a>
 </div>
