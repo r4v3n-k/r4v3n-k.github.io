@@ -21,15 +21,18 @@ layout: default
 
 {% if site.disqus and page.comments %}
   <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname  = '{{ site.disqus_shortname }}';
-    var disqus_identifier = '{{ page.id }}';
-    var disqus_title      = {{ page.title | jsonify }};
-    var disqus_url        = '{{ site.disqus_url }}';
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://{{ page.url }}';
+      this.page.identifier = '{{ page.id }}';
+    };
     (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_url;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      var dsq = document.createElement('script');
+      //dsq.type = 'text/javascript';
+      //dsq.async = true;
+      dsq.src = '//{{ site.disqus_url }}';
+      dsq.setAttribute('data-timestamp', +new Date());
+      (document.head || document.body).appendChild(dsq);
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
