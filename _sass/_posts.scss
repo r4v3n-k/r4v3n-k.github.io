@@ -98,6 +98,7 @@
         color: rgb(219,97,92);
     }
 }
+
 .post-meta {
     color: $grey-color;
     font-size: $small-font-size;
@@ -106,12 +107,18 @@
     display: inline-block;
     margin-right: 5px;
 }
+
 .post-link {
     display: block;
     font-size: 42px;
 }
+
 .post-tags {
     display: inline-block;
     margin-top: 0.3em;
     margin-bottom: 0.5em;
-  }
+}
+
+.post-disqus {
+    padding-top: 40px;
+}
