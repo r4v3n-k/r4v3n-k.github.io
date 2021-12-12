@@ -26,7 +26,8 @@ text:
 
 # Comments
 disqus: true
-disqus_shortname: r4v3n-k # put your disqus shortname
+disqus_shortname: r4v3n-k
+disqus_url: r4v3n-k-github-io.disqus.com/embed.js
 
 # Optional features
 show_social_icons:  false
