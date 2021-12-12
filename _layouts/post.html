@@ -29,10 +29,7 @@ layout: default
     };
     (function() {
       var dsq = document.createElement('script');
-      //dsq.type = 'text/javascript';
-      //dsq.async = true;
-      dsq.src = 'https://{{ site.disqus_url }}';
-      dsq.setAttribute('data-timestamp', +new Date());
+      dsq.src = 'http://{{ site.disqus_url }}';
       (document.head || document.body).appendChild(dsq);
     })();
   </script>
