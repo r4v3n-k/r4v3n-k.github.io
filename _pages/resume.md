@@ -12,8 +12,7 @@ description: gej48443@gmail.com
     <h5>Mar. 2016 - Feb. 2021</h5>
 </div>
 
-- B.S. in Computer Science and Engineering
-- Major GPA: 3.73/4.50
+- B.S. in Computer Science and Engineering; Major GPA: 3.73/4.50
 
 ### WORK EXPERIENCE
 
@@ -22,25 +21,25 @@ description: gej48443@gmail.com
     <h5>Sep. 2021 - Present</h5>
 </div>
 
-- Worked in Platform Engineering team to develop the multi-robot intelligence system that provides the web platform for a human to control multiple robots at the same time in a cloud environment.
+- Worked in Platform Engineering team to construct a multi-robot intelligence system that manages and controls robots by connecting with space and service infrastructure in real-time.
+- Developed the backend system of a robot delivery service with Golang.
 
 <div class="resume-item-title">
     <h4>Hyperconnect.<span> Seoul, South Korea — Machine Learning Software Engineer Intern</span></h4>
     <h5>Mar. 2021 - Apr. 2021</h5>
 </div>
 
-- Worked in ML Platform team to develop the chatbot evaluation system introduced by Facebook AI Research, where the system generates data using crowdsourcing such as AWS Mturk.
-- Designed REST API and implemented the asynchronous server with FastAPI, MySQL, and Nginx Unit.
+- Worked in ML Platform team to develop the chatbot evaluation system introduced by Facebook AI Research, where the system generates validation dataset using AWS Mturk.
+- Designed REST API and implemented the asynchronous server with FastAPI, MySQL, and Nginx.
 
 <div class="resume-item-title">
     <h4>Skelter Labs.<span> Seoul, South Korea — Software Engineer Intern</span></h4>
     <h5>Aug. 2020 -  Nov. 2020</h5>
 </div>
 
-- Worked in AI Lab to improve the end-to-end machine learning model using real-world data.
-- Experimented with data augmentation for noise by implementing the sound normalization tool on Spark.
-- Increased the accuracy of Speech-To-Text model by 0.03% by converting the noise preprocess part.
-- Developed the python tool that runs several diarization models in parallel in ASR comparison experiment.
+- Experimented with data augmentation for noise by implementing the sound normalization tool.
+- Improved the accuracy of the Speech-To-Text model by 0.03% by feeding a normalized dataset.
+- Implemented parallel programs running many different Diarization models with python.
 
 ### CAMPUS INVOLVEMENT
 
@@ -55,12 +54,11 @@ description: gej48443@gmail.com
 
 <div class="resume-item-title">
     <a href="https://github.com/r4v3n-k/CourseProjects/tree/master/2020-1st-Term-Capstone">
-        <h4>Stock Recommendation Web Application.<span> AWS; NLP; Word2Vec; Django; Celery; RabbitMQ; Docker</span></h4>
+        <h4>Stock Recommendation Web Application.<span> AWS; Word2Vec; Django; Celery; RabbitMQ; Docker</span></h4>
     </a>
 </div>
 
-- Implemented algorithms to list stocks that are closest to user's keywords.
-- Developed the back-end to handle large text data asynchronously using a message queue and workers.
+- Designed and developed a backend system to deal with Word2Vec learning and recommendation algorithms at once using a message broker and an asynchronous task queue.
 - Selected our project as a case of excellence based on creativity and high achievement among 13 teams.
 
 <div class="resume-item-title">
@@ -69,8 +67,8 @@ description: gej48443@gmail.com
     </a>
 </div>
 
-- Implemented a binary classifier using Dynamic Programming to memorize the gradient of weight in C++.
-- Developed GUI program that configures layers and shows error rate per iteration as a graph after training.
+- Implemented a multi-perceptron that classifies coordinates on the 2D plane with C++.
+- Developed a GUI that sets the Neural Network and shows the error rate per iteration as a graph.
 
 ### INDIVIDUAL PROJECTS
 
@@ -92,11 +90,12 @@ description: gej48443@gmail.com
 
 - Developed wireless network scanning tool to better demonstrate the relationship between the access point and the host in Airodump-ng, an open source for penetration testing.
 
+<!-- 
 ### TECHNICAL SKILLS
 
 <div id="skillset">
-    <h4>OS.<span> Mac OSX, Linux, Window</span></h4>
+    <h4>OS.<span> Mac OSX, Linux, Windows</span></h4>
     <h4>Language.<span> Go, Python, C/C++, JavaScript, Java</span></h4>
     <h4>Database.<span> MySQL, PostgreSQL, Redis</span></h4>
-    <h4>Framework.<span> Django, Flask, FastAPI, Qt5, Tensorflow</span></h4>
-</div>
+    <h4>Framework.<span> Echo, FastAPI, Django, Qt5, Tensorflow</span></h4>
+</div> -->
