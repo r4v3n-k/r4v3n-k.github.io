@@ -21,25 +21,25 @@ description: gej48443@gmail.com
     <h5>Sep. 2021 - Present</h5>
 </div>
 
-- Worked in Platform Engineering team to construct a multi-robot intelligence system that manages and controls robots by connecting with space and service infrastructure in real-time.
-- Developed the backend system of a robot delivery service with Golang.
+- Worked in the Platform Engineering team to build a multi-robot intelligence system that manages and controls robots by connecting with space and service infrastructure in real-time.
+- Developed the backend system of a robot delivery service with Go.
 
 <div class="resume-item-title">
     <h4>Hyperconnect.<span> Seoul, South Korea — Machine Learning Software Engineer Intern</span></h4>
     <h5>Mar. 2021 - Apr. 2021</h5>
 </div>
 
-- Worked in ML Platform team to develop the chatbot evaluation system introduced by Facebook AI Research, where the system generates validation dataset using AWS Mturk.
-- Designed REST API and implemented the asynchronous server with FastAPI, MySQL, and Nginx.
+- Developed the chatbot evaluation server, that generates a validation dataset based on indicators inspecting dialogue levels.
+- Designed REST APIs and implemented the asynchronous server with FastAPI, MySQL, and Nginx.
 
 <div class="resume-item-title">
     <h4>Skelter Labs.<span> Seoul, South Korea — Software Engineer Intern</span></h4>
     <h5>Aug. 2020 -  Nov. 2020</h5>
 </div>
 
-- Experimented with data augmentation for noise by implementing the sound normalization tool.
+- Implemented a normalization program for the noise dataset while experimenting with noise augmentation.
 - Improved the accuracy of the Speech-To-Text model by 0.03% by feeding a normalized dataset.
-- Implemented parallel programs running many different Diarization models with python.
+- Wrote a python script in order to evaluate many different Diarization models in parallel.
 
 ### CAMPUS INVOLVEMENT
 
@@ -58,7 +58,7 @@ description: gej48443@gmail.com
     </a>
 </div>
 
-- Designed and developed a backend system to deal with Word2Vec learning and recommendation algorithms at once using a message broker and an asynchronous task queue.
+- Developed the backend system to deal with Word2Vec learning and recommendation algorithms simultaneously using a message broker and an asynchronous task queue.
 - Selected our project as a case of excellence based on creativity and high achievement among 13 teams.
 
 <div class="resume-item-title">
@@ -68,7 +68,7 @@ description: gej48443@gmail.com
 </div>
 
 - Implemented a multi-perceptron that classifies coordinates on the 2D plane with C++.
-- Developed a GUI that sets the Neural Network and shows the error rate per iteration as a graph.
+- Developed a GUI that sets the neural network and shows the error rate per iteration as a graph.
 
 ### INDIVIDUAL PROJECTS
 
@@ -78,9 +78,10 @@ description: gej48443@gmail.com
     </a>
 </div>
 
-- Provided data operation APIs to create, read, update, and delete to clients for mobile games.
-- Built service auto-scaling environment in web application using container orchestration tools.
-- Implemented the pedometer module that also offers the change of user's calorie in Android SDK.
+- Implemented a pedometer module that measures the calorie variation of users when using smartphones based on velocity changes.
+- Developed REST APIs, that communicates a mobile game, with Django.
+- Built a service auto-scaling environment for web applications with Docker Swarm.
+
 
 <div class="resume-item-title">
     <a href="https://github.com/r4v3n-k/BoB-7th/tree/master/stage-3/my_airodump">
@@ -88,14 +89,4 @@ description: gej48443@gmail.com
     </a>
 </div>
 
-- Developed wireless network scanning tool to better demonstrate the relationship between the access point and the host in Airodump-ng, an open source for penetration testing.
-
-<!-- 
-### TECHNICAL SKILLS
-
-<div id="skillset">
-    <h4>OS.<span> Mac OSX, Linux, Windows</span></h4>
-    <h4>Language.<span> Go, Python, C/C++, JavaScript, Java</span></h4>
-    <h4>Database.<span> MySQL, PostgreSQL, Redis</span></h4>
-    <h4>Framework.<span> Echo, FastAPI, Django, Qt5, Tensorflow</span></h4>
-</div> -->
+- Developed a GUI that scans a wireless network packet in monitor mode, the goal of which is to show clearly how access points and devices connect compared to the existing tool, Airodump-ng
