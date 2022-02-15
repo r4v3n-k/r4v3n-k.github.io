@@ -53,7 +53,7 @@ description: gej48443@gmail.com
 ### COURSE PROJECTS
 
 <div class="resume-item-title">
-    <a href="https://github.com/r4v3n-k/CourseProjects/tree/master/2020-1st-Term-Capstone">
+    <a href="https://github.com/r4v3n-k/college-projects/tree/master/2020-1st-Term-Capstone">
         <h4>Stock Recommendation Web Application.<span> AWS; Word2Vec; Django; Celery; RabbitMQ; Docker</span></h4>
     </a>
 </div>
@@ -62,7 +62,7 @@ description: gej48443@gmail.com
 - Selected our project as a case of excellence based on creativity and high achievement among 13 teams.
 
 <div class="resume-item-title">
-    <a href="https://github.com/r4v3n-k/CourseProjects/tree/master/2019-2nd-Term-basicAI">
+    <a href="https://github.com/r4v3n-k/college-projects/tree/master/2019-2nd-Term-basicAI">
         <h4>Multi-Layer Perceptron.<span> Neural Network; Qt5; QtCreator</span></h4>
     </a>
 </div>
