@@ -1,8 +1,9 @@
 ---
 layout: resume
 permalink: /
-title: EUNJIN KWON
-description: gej48443@gmail.com
+title: Eunjin Kwon
+description: <p><span>gej48443@gmail.com</span>|<span><a href="https://github.com/r4v3n-k">Github</a></span>|<span><a href="https://www.linkedin.com/in/eunjin-kwon-a1636114a/">Linkedin</a></span></p>
+
 ---
 
 ### EDUCATION
@@ -17,15 +18,16 @@ description: gej48443@gmail.com
 ### WORK EXPERIENCE
 
 <div class="resume-item-title">
-    <h4>Naver Labs.<span> Seoul, South Korea — Software Engineer</span></h4>
+    <h4>NAVER LABS Corp.<span> Seoul, South Korea — Software Engineer</span></h4>
     <h5>Sep. 2021 - Present</h5>
 </div>
 
 - Worked in the Platform Engineering team to build a multi-robot intelligence system that manages and controls robots by connecting with space and service infrastructure in real-time.
-- Developed the backend system of a robot delivery service with Go.
+- Implemented the testing tool for a bunch of REST APIs with Golang and MySQL.
+- Developed and maintained the backend system of the robot delivery service with Golang.
 
 <div class="resume-item-title">
-    <h4>Hyperconnect.<span> Seoul, South Korea — Machine Learning Software Engineer Intern</span></h4>
+    <h4>HYPERCONNECT.<span> Seoul, South Korea — Machine Learning Software Engineer Intern</span></h4>
     <h5>Mar. 2021 - Apr. 2021</h5>
 </div>
 
@@ -41,6 +43,7 @@ description: gej48443@gmail.com
 - Improved the accuracy of the Speech-To-Text model by 0.03% by feeding a normalized dataset.
 - Wrote a python script in order to evaluate many different Diarization models in parallel.
 
+<!-- 
 ### CAMPUS INVOLVEMENT
 
 <div class="resume-item-title">
@@ -48,7 +51,8 @@ description: gej48443@gmail.com
     <h5>Sep. 2018 - Feb. 2019</h5>
 </div>
 
-- Selected as one of 160 participants nationwide for a 6-month professional program for the information security leaders training, attended lectures, served as a project manager in the security project on tracing attackers with system files in Windows, and introduced our project at a conference in Hong Kong.
+- Selected as one of 160 participants nationwide for a 6-month professional program for the information security leaders training, attended lectures, served as a project manager in the security project on tracing attackers with system files in Windows, and introduced our project at a conference in Hong Kong. 
+-->
 
 ### COURSE PROJECTS
 

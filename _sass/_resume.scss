@@ -20,6 +20,15 @@
     font-family: $resume-font-family;
     text-align: center;
     margin: 0;
+    
+    > p {
+        margin: 0;
+        font-weight: normal;
+
+        > span {
+            margin: 0 10px;
+        }
+    }
 }
 
 .resume-list {
@@ -52,19 +61,13 @@
         a { color: black; }
     }
 
-    #skillset {
-        flex-direction: column;
-        flex-flow: wrap;
-        height: 2.5em;
-
-        h4 {
-            width: 50%;
-        }
-    }
-
     h3 { // Title
         color: $blue-1;
-        padding-top: 5px;
+        padding-bottom: 2px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 12pt;
+        border-bottom: solid 1.5px $blue-1;
     }
     
     p {
