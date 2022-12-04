@@ -32,8 +32,16 @@ This is used for the construction of my English blog.
     gem install bundler jekyll
     ```
 
+4. Install gems.
+
+    ```bash
+    bundle install
+    ```
+
 ## Serve
 
 ```bash
 bundle exec jekyll serve
 ```
+
+Then, open `http://localhost:4000` on web browser.
