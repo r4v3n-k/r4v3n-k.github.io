@@ -1,7 +1,7 @@
 .resume-header {
     font-family: $resume-font-family;
     color: black;
-    margin-bottom: $space-2;
+    margin-bottom: $space-1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,9 +9,9 @@
 
 .resume-title {
     text-align: center;
-    margin: 0;
+    margin: 5px 0;
     font-family: $resume-font-family;
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: bold;
     color: black;
 }
@@ -24,6 +24,7 @@
     > p {
         margin: 0;
         font-weight: normal;
+        font-size: 10pt;
 
         > span {
             margin: 0 10px;
@@ -44,38 +45,42 @@
 }
 
 .resume-content {
-    .resume-item-title, #skillset {
-        display: flex;
-        justify-content: space-between;
-        margin: 0.3em 0;
+    .resume-item-title {
+        margin: 0.1em 0;
     }
     
-    h3, h4, h5 {
-        font-size: 10pt;
+    h3, h4 {
         color: black;
         margin: 0;
-        font-weight: bold;
         font-family: $resume-font-family;
-        font-size: 10pt;
         span { font-weight: normal; }
         a { color: black; }
     }
 
     h3 { // Title
-        color: $blue-1;
-        padding-bottom: 2px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        color: black;
+        margin-top: $space-2;
+        margin-bottom: 5px;
+        font-weight: bold;
         font-size: 12pt;
-        border-bottom: solid 1.5px $blue-1;
+        border-bottom: solid 1.5px black;
+    }
+
+    h4 {
+        font-weight: normal;
+        font-size: 10pt;
+        line-height: 1.5;
     }
     
     p {
         margin-bottom: $space-1;
+        font-size: 10pt;
     }
 
     ul {
-        margin-bottom: $space-1;
+        margin-bottom: $space-2;
+        font-size: 10pt;
+        color: black;
     }
 }
 
