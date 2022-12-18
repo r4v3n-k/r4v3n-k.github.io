@@ -25,10 +25,9 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
     <h4>September 2021 - March 2021</h4>
 </div>
 
-<!-- 웍스봇 알람 기능 개발: parcel manager 가 미발송 택배건을 제대로 보내도록 해서, 서비스 품질을 얼마나 개선하였나? -->
-<!-- 로봇 제어 로직의 몇 개의 버그를 픽스하였나 -->
-- Focused on back-end development of the robot delivery system with GoLang and MySQL.
-- Maintained the in-house Robot Delivery App at the service level.
+<!-- 미발송 택배 일 6건 씩 발생 -> 2건 발생 (66% 감소) -->
+- Focused on back-end development of the in-house robot delivery system with GoLang and MySQL at a service level.
+- Lessened parcel manager's human error by 66% by implementing the function notifying undelivered parcels.
 
 <div class="resume-item-title">
     <h4><b>Software Engineer Intern, Machine Learning Platform, AI Research</b></h4>
@@ -37,9 +36,9 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
 </div>
 
 <!-- 1:1 대화 -> 3번의 조사 -> 2번 이상 false 를 받은 사람 탐색 (abusing people), true dataset 확보 -->
-<!-- 생성된 데이터를 조회하는 인터페이스를 개발하여 연구원들의 실험 시간을 1시간 정도 단축 (SQL 문에 익숙하지 않아서) -->
+<!-- 생성된 데이터를 조회하는 인터페이스를 개발하여 연구원들의 실험 시간을 3시간 -> 10분 정도 단축 (SQL 문에 익숙하지 않아서) -->
 - Developed the Python web application inspecting the dialogue level of chatbots through a survey.
-- Reduced the experiment time of ML engineers by at most 1 hour by providing REST APIs to read survey data.
+- Reduced experiment time per researcher by 83% by providing survey data in different ways through Web APIs.
 
 <div class="resume-item-title">
     <h4><b>Software Engineer Intern, Speech-To-Text, AI Research</b></h4>
@@ -49,8 +48,7 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
 
 - Implemented a normalization tool needed to experiment with various noise augmentation.
 - Improved the accuracy of the STT model by 0.03% after learning a normalized dataset.
-- Wrote a python script to evaluate 4 different Speaker Diarization models in parallel. 
-- Decreased the time comparing the results of evaluation by 48 hours.
+- Boosted experiment time comparing the evaluation results by 71% by writing Python scripts to evaluate 4 different Speaker Diarization models in parallel.
 
 <div class="resume-item-title">
     <h4><b>Software Engineer, Mobile Game Development</b></h4>
@@ -60,7 +58,7 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
 
 <!-- Web API 를 제공하기 위해 Django, PostgreSQL 등 우분투 서버의 백엔드 아키텍처를 표준화 (도커라이징) -->
 <!-- 무중단 배포, 재사용 가능한 소스로 개발 및 배포 환경 구축 시간을 12시간에서 1시간으로 줄였다. 83% 개선 -->
-- Standardized the backend architecture to handle requests from Android mobile applications via Web API.
+- Standardized the backend architecture to handle requests from Android mobile applications via a Web API.
 - Configured container orchestration onto a server through Docker Swarm and documented the entire process.
 
 ### EDUCATION
