@@ -26,16 +26,28 @@ This is used for the construction of my English blog.
       eval "$(rbenv init -)"
     ```
 
-3. Install jekyll.
+## Install Prerequisites (Debian Linux)
+
+- [reference](https://jekyllrb.com/docs/installation/ubuntu/)
+
+## Install Jekyll
+
+1. Install jekyll.
 
     ```bash
     gem install bundler jekyll
     ```
 
-4. Install gems.
+2. Install gems.
 
     ```bash
     bundle install
+    ```
+
+3. Add webrick.
+
+    ```bash
+    bundle add webrick
     ```
 
 ## Serve
