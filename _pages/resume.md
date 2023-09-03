@@ -18,11 +18,11 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
 - Designed, coded key algorithms to generate reusable, extensible ML pipelines with each component standardized.
 - Constructed CI/CD for the API server through Github Actions with dividing into the development and production.
 - Documented guidelines for the API server and tutorials for creating pipelines with SphinX.
-- Enhanced the Autonomous Driving Team's ML systems from manually local training to scalable ML pipelines supporting distributed training, so contributed to the decrement 93% of the model training time using 16 GPUs.
+- Enhanced the Autonomous Driving Team's ML systems from manual and local training to scalable ML pipelines supporting distributed training based on 16 GPUs.
 - Implemented a batch application querying vehicle driving data in Hive using Apache Spark, and reduced the data processing time from 6 days to 24 seconds for 500GB.
 - Built Apache Airflow running on 2 types of clusters (CPU-only, GPU-supported) to maximize Kubernetes resource use with it scheduling data pipelines in parallel.
 - Configured remote logging system of Apache Airflow with Elastic-search and Kibana.
-- Collaborating with 3 AI Research teams to enable data pipelines to cost at most 4200 CPU cores a day.
+- Collaborating with 3 AI research teams to enable data pipelines to cost at most 4200 CPU cores a day.
 
 <div class="resume-item-title">
     <h4><b>Software Engineer, Robot Service, Platform Engineering</b></h4>
@@ -51,6 +51,7 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
     <h4>August 2020 -  November 2020</h4>
 </div>
 
+<!-- 4개의 화자모델을 평가하는 단일 처리를 병렬 처리로 바꿔서 시간을 71% 단축 -->
 - Implemented a normalization tool needed to experiment with various noise augmentation.
 - Improved the accuracy of the STT model by 0.03% after learning a normalized dataset.
 - Boosted experiment time comparing the evaluation results by 71% by writing Python scripts to evaluate 4 different Speaker Diarization models in parallel.
