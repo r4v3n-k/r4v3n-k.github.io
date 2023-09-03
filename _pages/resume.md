@@ -11,18 +11,23 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
 <div class="resume-item-title">
     <h4><b>Software Engineer, MLOps, Platform Engineering</b></h4>
     <h4>NAVER LABS Corp, Seongnam-si, South Korea</h4>
-    <h4>April 2021 - Present</h4>
+    <h4>April 2022 - Present</h4>
 </div>
 
-- Designed, coded and tested the core algorithm to generate reusable, scalable pipelines with Kubeflow Python SDK.
-- Developed REST APIs needed to construct MLOps, and streamlined 6 machine learning workflows.
-- Documented its official guideline and 3 tutorials via SphinX, and coached the usage to 3 AI research teams.
-- Taught 2 Hadoop-related in-house infrastructures to the Autonomous Driving team for 4 hours.
+- Developed and maintained REST APIs with Python to help operate ML system on NAVER cloud using Kubeflow, MLflow, KServe and HDFS.
+- Designed, coded key algorithms to generate reusable, extensible ML pipelines with each component standardized.
+- Constructed CI/CD for the API server through Github Actions with dividing into the development and production.
+- Documented guidelines for the API server and tutorials for creating pipelines with SphinX.
+- Enhanced the Autonomous Driving Team's ML systems from manually local training to scalable ML pipelines supporting distributed training, so contributed to the decrement 93% of the model training time on 40TB data set.
+- Implemented a batch application querying vehicle driving data in Hive using Apache Spark, and reduced the data processing time from 6 days to 24 seconds for 500GB.
+- Built Apache Airflow running on 2 types of clusters (cpu-only, gpu-supported) to maximize Kubernetes resource use with it scheduling data pipelines in parallel.
+- Configured remote logging system of Apache Airflow with Elastic-search and Kibana.
+- Collaborating with 3 AI Research teams to enable data pipelines to cost at most 4200 CPU cores a day.
 
 <div class="resume-item-title">
     <h4><b>Software Engineer, Robot Service, Platform Engineering</b></h4>
     <h4>NAVER LABS Corp, Seongnam-si, South Korea</h4>
-    <h4>September 2021 - March 2021</h4>
+    <h4>September 2021 - March 2022</h4>
 </div>
 
 <!-- 미발송 택배 일 6건 씩 발생 -> 2건 발생 (66% 감소) -->
@@ -50,17 +55,6 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
 - Improved the accuracy of the STT model by 0.03% after learning a normalized dataset.
 - Boosted experiment time comparing the evaluation results by 71% by writing Python scripts to evaluate 4 different Speaker Diarization models in parallel.
 
-<div class="resume-item-title">
-    <h4><b>Software Engineer, Mobile Game Development</b></h4>
-    <h4>Player Lab, Seoul, South Korea</h4>
-    <h4>March 2018 - July 2019</h4>
-</div>
-
-<!-- Web API 를 제공하기 위해 Django, PostgreSQL 등 우분투 서버의 백엔드 아키텍처를 표준화 (도커라이징) -->
-<!-- 무중단 배포, 재사용 가능한 소스로 개발 및 배포 환경 구축 시간을 12시간에서 1시간으로 줄였다. 83% 개선 -->
-- Standardized the backend architecture to handle requests from Android mobile applications via a Web API.
-- Configured container orchestration onto a server through Docker Swarm and documented the entire process.
-
 ### EDUCATION
 
 <div class="resume-item-title">
@@ -70,13 +64,3 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
 </div>
 
 <!-- - Major GPA: 3.73/4.50 -->
-
-### CAMPUS INVOLVEMENT
-
-<div class="resume-item-title">
-    <h4><b>Next-Generation Security Leader Training Program</b></h4>
-    <h4>Korea Information Technology Research Institute, Seoul, South Korea</h4>
-    <h4>September 2018 - February 2019</h4>
-</div>
-
-- Selected as one of 160 participants nationwide for a 6-month professional program for the information security leaders training, attended lectures, served as a project manager in the security project on tracing attackers with system files in Windows, and introduced our project at a conference in Hong Kong. 
