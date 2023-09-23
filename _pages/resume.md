@@ -14,15 +14,15 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
     <h4>April 2022 - Present</h4>
 </div>
 
-- Designed and implemented a framework to configure ML pipelines with standardized and pre-defined components.
-- Developed and maintained REST APIs with Python to help operate ML system on NAVER cloud using Kubeflow, MLflow, KServe, and HDFS.
+- Designed and implemented a framework to configure ML pipelines with standardized and pre-defined components using Kubeflow, MLflow, KServe, and HDFS.
+- Developed and maintained REST APIs with Python to operate ML system on Kubernetes.
 - Constructed CI/CD for the API server using GitHub Action to divide environments into development and production.
-- Documented guidelines for the API server and 6 tutorials for creating reusable pipelines with SphinX.
+- Documented guidelines for the APIs with SphinX, and tested out pipeline creations for 5 of ML models.
 - Enhanced the Autonomous Driving team's ML system from manual and local training to extensible ML pipelines supporting distributed training based on 16 GPUs, which improved 93% of training time on 40TB data sets.
-- Coded and tested a batch application querying vehicle driving data in Hive using Apache Spark, that reduced the data processing time from 6 days to 24 seconds for 500GB data sets.
-- Built Apache Airflow working on multiple clusters to execute data pipelines in parallel and configure logging system with Elastic-search and Kibana.
-- Contributing to wiring 6 data pipelines and 4 ML pipelines for the Autonomous Driving system, with supporting data and model versioning.
-- Collaborating with the Vision team to design 3 data pipelines, that aim to cost at most 4800 cores a day.
+- Coded and tested a batch application querying vehicle driving data in Hive using Apache Spark, which reduced the data processing time from 6 days to 24 seconds for 500GB data sets.
+- Built Apache Airflow on Kubernetes to schedule workflow tasks distributively and configured logging system with Elastic-search and Kibana.
+- Collaborating with the Autonomous Driving team to operate 6 of data pipelines.
+- Collaborating with the Vision team to create 2 data pipelines.
 
 <div class="resume-item-title">
     <h4><b>Software Engineer, Robot Service, Platform Engineering</b></h4>
