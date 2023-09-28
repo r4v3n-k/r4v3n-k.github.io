@@ -48,7 +48,7 @@
     .resume-item-title {
         margin: 0.1em 0;
     }
-    
+
     h3, h4 {
         color: black;
         margin: 0;
@@ -62,24 +62,24 @@
         margin-top: $space-2;
         margin-bottom: 5px;
         font-weight: bold;
-        font-size: 12pt;
-        border-bottom: solid 1.5px black;
+        font-size: 13pt;
+        border-bottom: solid 2px black;
     }
 
     h4 {
         font-weight: normal;
-        font-size: 10pt;
+        font-size: $resume-font-size;
         line-height: 1.5;
     }
-    
+
     p {
         margin-bottom: $space-1;
-        font-size: 10pt;
+        font-size: $resume-font-size;
     }
 
     ul {
         margin-bottom: $space-2;
-        font-size: 10pt;
+        font-size: $resume-font-size;
         color: black;
     }
 }
