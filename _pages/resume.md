@@ -14,7 +14,7 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
 </div>
 
 <div class="resume-item-title">
-    <h4><b>Technologies/Frameworks:</b> FastAPI, Airflow, Kubeflow, Spark, HDFS</h4>
+    <h4><b>Technologies/Frameworks:</b> FastAPI, Airflow, Kubeflow, Spark</h4>
 </div>
 
 <div class="resume-item-title">
@@ -22,7 +22,7 @@ description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://ww
 </div>
 
 <div class="resume-item-title">
-    <h4><b>Software and Tools:</b> Git, Github, Postman, Helm, Bazel</h4>
+    <h4><b>Software and Tools:</b> Git, Github, Postman, Helm, Bazel, Elastic-search, Kibana</h4>
 </div>
 
 <div class="resume-item-title">
@@ -53,9 +53,9 @@ Test:
     6000 records := 0.05 gb = 50 mb ------- single core ( 560 sec ) vs. multi core ( 117 sec ) : improved 79%
 -->
 
-- Designed and developed a framework to configure ML pipeline with standardized components.
+- Designed and developed a framework to configure ML pipelines with standardized components.
 - Created RESTful backend server enabling a cloud-based ML system operation for robots.
-- Implemented an idle Kubernetes resource elimination algorithm, reducing pipeline operational cost.
+- Implemented idle Kubernetes resource elimination algorithms, reducing pipeline operational costs.
 - Constructed a CI/CD pipeline for a core service, diminishing release cycle time by 66%.
 - Developed a data merging application with Apache Spark, improving data extraction time by 57%.
 - Built a custom integration between Apache Airflow and NAVER cloud infrastructure.
@@ -67,7 +67,7 @@ Test:
 </div>
 
 <!-- reduced daily parcel non-delivery rate (6/30 = 0.2 -> 2/30 = 0.07) 13% : 미발송 택배 일 6 of 30 건 발생 -> 2건 발생 -->
-- Focused on the backend development with Echo framework and MySQL for the Robot Delivery service.
+- Focused on backend development with Echo framework and MySQL for the Robot Delivery service.
 - Lessened the daily parcel non-delivery rate by 13% by implementing the notification for parcel managers.
 
 <div class="resume-item-title">
@@ -89,7 +89,7 @@ Test:
 
 - Created a normalization tool for large audio data sets. Conducted noise augmentation experiments.
 - Refactored training data fetching methods of the Speech-To-Text model, increasing the accuracy by 0.03%.
-- Wrote Python multiprocessing programs to automate evaluation process of Speaker Diarization models.
+- Automated evaluation process of Speaker Diarization models by multiprocessing programs in Python.
 
 
 ### EDUCATION
