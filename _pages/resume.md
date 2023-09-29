@@ -54,7 +54,7 @@ Test:
 -->
 
 - Designed and developed a framework to configure ML pipeline with standardized components.
-- Created a REST API for a cloud-based ML system operation and documented guidelines with SphinX.
+- Created RESTful backend server enabling a cloud-based ML system operation for robots.
 - Implemented an idle Kubernetes resource elimination algorithm, reducing pipeline operational cost.
 - Constructed a CI/CD pipeline for a core service, diminishing release cycle time by 66%.
 - Developed a data merging application with Apache Spark, improving data extraction time by 57%.
@@ -67,7 +67,7 @@ Test:
 </div>
 
 <!-- reduced daily parcel non-delivery rate (6/30 = 0.2 -> 2/30 = 0.07) 13% : 미발송 택배 일 6 of 30 건 발생 -> 2건 발생 -->
-- Focused on the back-end development with Echo framework and MySQL for the Robot Delivery service.
+- Focused on the backend development with Echo framework and MySQL for the Robot Delivery service.
 - Lessened the daily parcel non-delivery rate by 13% by implementing the notification for parcel managers.
 
 <div class="resume-item-title">
@@ -87,7 +87,7 @@ Test:
     <h4>August 2020 -  November 2020</h4>
 </div>
 
-- Created a normalization tool for large audio data sets and conducted noise augmentation experiments.
+- Created a normalization tool for large audio data sets. Conducted noise augmentation experiments.
 - Refactored training data fetching methods of the Speech-To-Text model, increasing the accuracy by 0.03%.
 - Wrote Python multiprocessing programs to automate evaluation process of Speaker Diarization models.
 
