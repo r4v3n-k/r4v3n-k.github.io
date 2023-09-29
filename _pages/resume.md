@@ -54,7 +54,7 @@ Test:
 -->
 
 - Designed and developed a framework to configure ML pipelines with standardized components.
-- Created RESTful backend server enabling a cloud-based ML system operation for robots.
+- Created a RESTful backend server enabling a cloud-based ML system operation for robots.
 - Implemented idle Kubernetes resource elimination algorithms, reducing pipeline operational costs.
 - Constructed a CI/CD pipeline for a core service, diminishing release cycle time by 66%.
 - Developed a data merging application with Apache Spark, improving data extraction time by 57%.
@@ -78,7 +78,7 @@ Test:
 
 <!-- 1:1 대화 -> 3번의 조사 -> 2번 이상 false 를 받은 사람 탐색 (abusing people), true dataset 확보 -->
 <!-- 생성된 데이터를 조회하는 인터페이스를 개발하여 연구원들의 실험 시간을 3시간 -> 20분 정도 단축 (SQL 문에 익숙하지 않아서) -->
-- Developed a Python web application to examine the dialogue level of chat bots through AWS MTurk.
+- Developed a Python web application to examine the dialogue level of chatbots through AWS MTurk.
 - Streamlined frequent SQL queries on survey data with Web API, reducing data analysis time.
 
 <div class="resume-item-title">
