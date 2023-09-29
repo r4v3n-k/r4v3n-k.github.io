@@ -7,8 +7,12 @@
 }
 
 #container-wrapper {
-    width:40%;
-    min-width: 250px;
+    //width:40%;
+    //min-width: 250px;
+    width: -webkit-calc(50% - (#{$horizontal-spacing-unit} * 2));
+    width: calc(50% - (#{$horizontal-spacing-unit} * 2));
+    min-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+    min-width: calc(800px - (#{$horizontal-spacing-unit} * 2));
 }
 
 #search-input {
