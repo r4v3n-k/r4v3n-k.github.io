@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "tag1"
-tag: tag1
+title: "DSA"
+tag: DSA
 robots: noindex
 ---
