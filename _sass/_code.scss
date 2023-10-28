@@ -4,9 +4,12 @@
 .highlight {
   margin: 0;
   width: 100%;
+
+  pre {
+    background-color: #333; // #272822; 
+  }
 }
-.highlight pre { 
-  background-color: #333; // #272822; 
+.highlight > pre {
   border-radius: 0.3em;
 }
 .highlight .hll { background-color: #272822; }
@@ -82,7 +85,7 @@ code {
 
 code {
   color: $code-color;
-  font-size: 90%;
+  font-size: 100%;
   padding: 0.2em;
 }
 
