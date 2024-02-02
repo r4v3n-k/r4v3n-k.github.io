@@ -52,4 +52,5 @@ with open(tag_db_path) as f:
         with open(file_path, 'w') as f2:
             f2.write('---\nlayout: tagpage\ntitle: \"' + tag_db[tag] + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n')
 
-print("Tags generated, count", len(current_used_tags))
+print('Tags generated, count:', len(current_used_tags))
+print(f'Used/Total = {len(current_used_tags)}/{len(tag_db)}')
