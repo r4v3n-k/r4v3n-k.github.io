@@ -1,52 +1,55 @@
 #!/usr/bin/env python
-
-'''
-tag_generator.py
-Copyright 2017 Long Qian
-Contact: lqian8@jhu.edu
-This script creates tags for your Jekyll blog hosted by Github page.
-No plugins required.
-'''
-
 import glob
 import os
+import yaml
 
-post_dir = '_posts/'
-tag_dir = 'blog/tags/'
+tag_db_path = '_data/tag-format.yml'
 
-filenames = glob.glob(post_dir + '**/*md', recursive=True)
+with open(tag_db_path) as f:
+    tag_db = yaml.load(f, Loader=yaml.FullLoader)
 
-total_tags = []
-for filename in filenames:
-    f = open(filename, 'r')
-    crawl = False
-    for line in f:
-        if crawl:
-            current_tags = line.strip().split()
-            if current_tags[0] == 'tags:':
-                total_tags.extend(current_tags[1:])
-                crawl = False
-                break
-        if line.strip() == '---':
-            if not crawl:
-                crawl = True
-            else:
-                crawl = False
-                break
-    f.close()
-total_tags = set(total_tags)
+    # Gather all of the used tags in posting.
+    posts = glob.glob('_posts/**/*md', recursive=True)
+    current_used_tags = []
+    for post in posts:
+        f = open(post, 'r')
+        crawl = False
+        for line in f:
+            if crawl:
+                current_tags = line.strip().split()
+                if current_tags[0] == 'tags:':
+                    current_used_tags.extend(current_tags[1:])
+                    crawl = False
+                    break
+            if line.strip() == '---':
+                if not crawl:
+                    crawl = True
+                else:
+                    crawl = False
+                    break
+        f.close()
 
-old_tags = glob.glob(tag_dir + '*.md')
-for tag in old_tags:
-    os.remove(tag)
-    
-if not os.path.exists(tag_dir):
-    os.makedirs(tag_dir)
+    # Check if there is an unavailable tag.
+    current_used_tags = set(current_used_tags)
+    for tag in current_used_tags:
+        if tag not in tag_db:
+            raise Exception(f'{tag} does not exist in {tag_db_path}')
 
-for tag in total_tags:
-    tag_filename = tag_dir + tag + '.md'
-    f = open(tag_filename, 'a')
-    write_str = '---\nlayout: tagpage\ntitle: \"' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n'
-    f.write(write_str)
-    f.close()
-print("Tags generated, count", total_tags.__len__())
+    # Remove unused tag markdown files for now.
+    tag_dir = 'blog/tags/'
+    if not os.path.exists(tag_dir):
+        os.makedirs(tag_dir)
+
+    old_tag_md_files = glob.glob(tag_dir + '*.md')
+    for file_path in old_tag_md_files:
+        tag = os.path.basename(file_path).split(".md")[0]
+        if tag not in current_used_tags:
+            os.remove(file_path)
+
+    # Update tag markdown files that are used in blogging.
+    for tag in current_used_tags:
+        file_path = tag_dir + tag + '.md'
+        with open(file_path, 'w') as f2:
+            f2.write('---\nlayout: tagpage\ntitle: \"' + tag_db[tag] + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n')
+
+print("Tags generated, count", len(current_used_tags))

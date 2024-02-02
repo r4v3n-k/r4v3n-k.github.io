@@ -2,13 +2,6 @@
 
   <div class="wrapper">
 
-    {% if page.layout != "resume" %}
-    <span class="site-title">
-        {% assign name = site.blog_name | split: ' ' %}
-        <strong>{{ name | first }}</strong>
-    </span>
-    {% endif %}
-
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
@@ -22,22 +15,12 @@
         </label>
 
       <div class="trigger">
-        <!-- Resume -->
-        <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">Resume</a>
-
-        <!-- Blog -->
-        <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">Blog</a>
-
-        <!-- Pages --><!-- 
-        {% for page in site.pages %}
-          {% if page.title and page.url != "/" %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %} -->
-
+        <!-- About -->
+        <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">About</a>
+        <!-- Archive -->
+        <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">Archive</a>
       </div>
     </nav>
-
   </div>
 
 </header>

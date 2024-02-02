@@ -1,0 +1,27 @@
+# shortcut-name: full-name
+# Common
+note: Note
+# Daily Review
+diary: Diary
+book: Book
+movie: Movie
+tool: Software & Tools
+# Study
+py: Python
+go: GoLang
+dsa: DataStructure & Algorithm
+ps: ProblemSolving
+sd: SystemDesign
+dp: DesignPattern
+arch: Architecture
+opensource: OpenSource
+linux: Linux
+ai: AI
+genai: Generative AI
+ml: MachineLearning
+dl: DeepLearning
+devops: DevOps
+dataops: DataOps
+mlops: MLOps
+llmops: LLMOps
+genaiops: GenAIOps

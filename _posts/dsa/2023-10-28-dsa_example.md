@@ -4,7 +4,7 @@ title: this is a template
 date: 2023-10-28
 description: this is description
 comments: true
-tags: DSA
+tags: dsa
 ---
 
 > Table of Contents

@@ -6,10 +6,10 @@
 {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
 {% for temptag in sortedtemptags %}
   {% assign tagitems = temptag | split: '#' %}
-  {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
-  {% if page.tag == tagname %}
-    <a class="tag selected" href="/blog/tags/{{ tagname }}">{{ tagname }}</a>
+  {% capture tag_name %}{{ tagitems[1] }}{% endcapture %}
+  {% if page.tag == tag_name %}
+    <a class="tag selected" href="/blog/tags/{{ tag_name }}">{{ site.data.tag-format[tag_name] }}</a>
   {% else %}
-    <a class="tag" href="/blog/tags/{{ tagname }}">{{ tagname }}</a>
+    <a class="tag" href="/blog/tags/{{ tag_name }}">{{ site.data.tag-format[tag_name] }}</a>
   {% endif %}
 {% endfor %}

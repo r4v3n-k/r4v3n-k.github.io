@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "DSA"
-tag: DSA
+title: "SystemDesign"
+tag: sd
 robots: noindex
 ---

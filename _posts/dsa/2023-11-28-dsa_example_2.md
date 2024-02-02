@@ -1,10 +1,10 @@
 ---
 layout: post
-title: this is a sample 2
-date: 2023-10-29
+title: hi there
+date: 2023-11-28
 description: this is description
 comments: true
-tags: dsa sd
+tags: dsa
 ---
 
 > Table of Contents

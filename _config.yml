@@ -1,8 +1,8 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-title: robin-kkk
-name: Eunjin Kwon
+title: Robin Kwon
+name: Robin's website
 email: gej48443@gmail.com
 footer_text: >
   <a href="https://github.com/robin-kkk">Github</a>
@@ -12,7 +12,7 @@ url: https://robin-kkk.github.io
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: robin-kkk
+blog_name: ""
 
 # Pagination
 paginate: 4
