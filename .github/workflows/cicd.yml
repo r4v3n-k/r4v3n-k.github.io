@@ -11,11 +11,30 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
+      - name: Setup java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "zulu"
+          java-version: "21"
+      - name: Setup plantuml plugin
+        run: |
+          # install and test plantuml
+          wget https://github.com/plantuml/plantuml/releases/download/v1.2024.0/plantuml-gplv2-1.2024.0.jar
+          mv plantuml-gplv2-1.2024.0.jar /opt/local/bin/plantuml.jar
+          mkdir -p /opt/local/bin
+          chmod 777 /opt/local/bin/plantuml.jar
+          java -jar /opt/local/bin/plantuml.jar -testdot
+          # write a plugin script
+          cat <<EOF > /usr/local/bin/plantuml
+          #!/bin/bash
+          java -jar /opt/local/bin/plantuml.jar "\$1" "\$2"
+          EOF
+          chmod +x /usr/local/bin/plantuml
+      - name: Setup pages
         uses: actions/configure-pages@v3
       - name: Build
         uses: actions/jekyll-build-pages@v1
@@ -23,7 +42,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: build
     steps:
       - name: Deploy to GitHub Pages
