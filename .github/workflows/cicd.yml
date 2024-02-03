@@ -24,6 +24,8 @@ jobs:
         env:
           BASE_DIR: /opt/local/bin
         run: |
+          sudo apt-get update
+          sudo apt-get install graphviz
           JAR_PATH=$BASE_DIR/plantuml.jar
           # install and test plantuml
           mkdir -p $BASE_DIR
