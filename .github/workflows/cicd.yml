@@ -24,10 +24,11 @@ jobs:
         env:
           BASE_DIR: /opt/local/bin
         run: |
+          # install prerequisites
           sudo apt-get update
           sudo apt-get install graphviz
-          JAR_PATH=$BASE_DIR/plantuml.jar
           # install and test plantuml
+          JAR_PATH=$BASE_DIR/plantuml.jar
           mkdir -p $BASE_DIR
           wget https://github.com/plantuml/plantuml/releases/download/v1.2024.0/plantuml-gplv2-1.2024.0.jar
           mv plantuml-gplv2-1.2024.0.jar $JAR_PATH && chmod 777 $JAR_PATH
@@ -38,21 +39,21 @@ jobs:
           java -jar /opt/local/bin/plantuml.jar "\$1" "\$2"
           EOF
           chmod +x /usr/local/bin/plantuml
-      - name: Setup pages
-        uses: actions/configure-pages@v3
-      - name: Build
-        uses: actions/jekyll-build-pages@v1
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+          # test a plugin script
+          plantuml
 
-  deploy:
-    runs-on: ubuntu-20.04
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      # Use GitHub Actions' cache to shorten build times and decrease load on servers
+      - name: Cache to reduce build time
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
 
+      # Specify the target branch (optional)
+      - name: Build and deploy
+        uses: helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target_branch: "master"
