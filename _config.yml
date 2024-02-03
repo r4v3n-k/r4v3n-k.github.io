@@ -2,15 +2,12 @@
 # Site settings
 # -----------------------------------------------------------------------------
 title: Robin Kwon Blog
-repository: robin-kkk/robin-kkk.github.io
-author: Eunjin Kwon
 name: Robin's website
 email: gej48443@gmail.com
 footer_text: >
   <a href="https://github.com/robin-kkk">Github</a>
   <a href="https://www.linkedin.com/in/eunjin-kwon-a1636114a/">LinkedIn</a>
 url: https://robin-kkk.github.io
-baseurl: ""
 
 # -----------------------------------------------------------------------------
 # Blog
