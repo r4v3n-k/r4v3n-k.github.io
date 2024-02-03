@@ -1,7 +1,5 @@
 # Intro
 
-This is used for the construction of my English blog.
-
 # How To Use
 
 ## Install Prerequisites (MacOS M1)
