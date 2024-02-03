@@ -36,6 +36,7 @@ enable_katex: true
 # -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------
+encoding: utf-8
 
 # Build settings
 markdown: kramdown
@@ -52,6 +53,8 @@ exclude: [vendor]
 
 # Plug-ins
 plugins:
-    - jekyll-email-protect
-    - jekyll-paginate
-    - jemoji
+  - jekyll-email-protect
+  - jekyll-paginate
+  - jekyll-plantuml
+  - jekyll-gist
+  - jemoji

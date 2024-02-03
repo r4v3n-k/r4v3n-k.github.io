@@ -15,7 +15,6 @@ This is used for the construction of my English blog.
     # Got "* system (set by /Users/idong-uk/.rbenv/version)"
     rbenv install -l # Check the recent version.
     rbenv install {VERSION} && rbenv global {VERSION}
-
     ```
 
 2. Add rbenv PATH in `~/.zshrc`.
@@ -49,6 +48,33 @@ This is used for the construction of my English blog.
     ```bash
     bundle add webrick
     ```
+
+4. Set up [jekyll-plantuml](https://github.com/yegor256/jekyll-plantuml/tree/master?tab=readme-ov-file)
+
+    ```bash
+    sudo apt-get update
+    sudo apt-get install graphviz
+
+    mkdir -p /opt/local/bin
+    ln -s /usr/bin/dot /opt/local/bin/dot
+
+    wget https://github.com/plantuml/plantuml/releases/download/v1.2024.0/plantuml-gplv2-1.2024.0.jar
+    mv plantuml-gplv2-1.2024.0.jar /opt/local/bin/plantuml.jar
+    chmod 777 /opt/local/bin/plantuml.jar
+    java -jar /opt/local/bin/plantuml.jar -testdot
+
+    cat <<EOF > /usr/local/bin/plantuml
+    #!/bin/bash
+    java -jar /opt/local/bin/plantuml.jar "\$1" "\$2"
+    EOF
+    chmod +x /usr/local/bin/plantuml
+    ```
+
+## Build
+
+```bash
+bundle exec jekyll build
+```
 
 ## Serve
 
