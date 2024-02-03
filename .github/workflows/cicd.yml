@@ -21,13 +21,15 @@ jobs:
           distribution: "zulu"
           java-version: "21"
       - name: Setup plantuml plugin
+        env:
+          BASE_DIR: /opt/local/bin
         run: |
+          JAR_PATH=$BASE_DIR/plantuml.jar
           # install and test plantuml
+          mkdir -p $BASE_DIR
           wget https://github.com/plantuml/plantuml/releases/download/v1.2024.0/plantuml-gplv2-1.2024.0.jar
-          mv plantuml-gplv2-1.2024.0.jar /opt/local/bin/plantuml.jar
-          mkdir -p /opt/local/bin
-          chmod 777 /opt/local/bin/plantuml.jar
-          java -jar /opt/local/bin/plantuml.jar -testdot
+          mv plantuml-gplv2-1.2024.0.jar $JAR_PATH && chmod 777 $JAR_PATH
+          java -jar $JAR_PATH -testdot
           # write a plugin script
           cat <<EOF > /usr/local/bin/plantuml
           #!/bin/bash
