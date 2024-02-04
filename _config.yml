@@ -59,3 +59,9 @@ plugins:
   - jekyll-plantuml
   - jekyll-gist
   - jemoji
+  - jekyll-toc
+
+# Plug-in settings
+toc:
+  min_level: 1 # default: 1
+  max_level: 3 # default: 6

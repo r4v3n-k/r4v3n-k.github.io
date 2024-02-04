@@ -2,21 +2,10 @@
 layout: post
 title: this is a sample
 date: 2015-10-20
-description: this is description
-comments: true
 tags: ps ml
+toc: true
+comments: true
 ---
-
-> Table of Contents
-> * [Heading 1](#heading-1)
-> * [Formmatting and links](#formmatting-and-links)
-> * [Images](#images)
-> * [Code block](#code-block)
->    * [Raw](#Raw)
->    * [Syntax highlighting](#syntax-highlighting)
-> * [Math](#math)
-> * [Highlight](#highlight)
-
 
 This post is just `template` file.
 
