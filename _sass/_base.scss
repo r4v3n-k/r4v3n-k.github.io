@@ -64,6 +64,7 @@ figcaption {
     -webkit-box-shadow: 0px 10px 18px 3px #888;
     -khtml-box-shadow: 10px 10px 5px #ccc;
   }
+  height: 100%;
 }
 .col {
   object-fit: cover;
@@ -77,6 +78,10 @@ figcaption {
 }
 .three {
   width: 100%;
+}
+.square {
+  width: 90%;
+  height: 90%;
 }
 .caption {
   height: 100%;
