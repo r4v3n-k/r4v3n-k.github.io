@@ -154,9 +154,10 @@ pre a:only-of-type::before {
 
 .highlight .language-terminal {
   color: white;
-  font-family: Helvetica;
-  letter-spacing: 0.06em;
-  word-spacing: 0.1em;
+  //font-family: Helvetica;
+  //letter-spacing: 0.06em;
+  //word-spacing: 0.1em;
+  line-height: 1.5;
   & > span {
     color: white;
   }
