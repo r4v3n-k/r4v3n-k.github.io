@@ -92,8 +92,7 @@ So, it can be traversed forwards and backwards from anywhere.
 
 ## When to use
 
-1. Used to implement some other common abstract data types: List, Queue, Stack, and [Associative Arrays](https://en.wikipedia.org/wiki/Associative_array)
-    - Often used in the implementation of adjacency lists for graphs.
+1. Used to implement some other common abstract data types: List, Queue, Stack, and [Associative Arrays](https://en.wikipedia.org/wiki/Associative_array) (Often used in the implementation of adjacency lists for graphs)
 2. Easy to create a circular list
 3. Easy to model real world objects, such as trains, that are sequential
 4. Used in separate chaining of certain Hash Table implementations to deal with hashing collisions
@@ -105,6 +104,7 @@ So, it can be traversed forwards and backwards from anywhere.
 | Search | $O(n)$ | $O(n)$ |
 | Insert at head | $O(1)$ | $O(1)$ |
 | Insert at tail | $O(1)$ | $O(1)$ |
+| Insert at middle | $O(n)$ | $O(n)$ |
 | Delete at head | $O(1)$ | $O(1)$ |
 | Delete at tail | $O(n)$ | $O(1)$ |
 | Delete at middle | $O(n)$ | $O(n)$ |
@@ -117,19 +117,12 @@ So, it can be traversed forwards and backwards from anywhere.
 
 # Implementation
 
-Common Interface
-
-{% highlight python linenos %}
-''' Long Comment '''
-# This is comment
-def main(x: int) -> None:
-    print("Hello World")
-{% endhighlight %}
+The two classes have a common interface but perform slightly different operations depending on the class.
 
 ## Singly Linked List
 
 <details>
-<summary>Source Code</summary>
+<summary>Python</summary>
 
 {% highlight python linenos %}
 ''' Long Comment '''
@@ -140,19 +133,32 @@ def main(x: int) -> None:
 
 </details>
 
-### Class
+### Search
 
-TBD
+{% highlight python linenos %}
+class SinglyLinkedList:
+    # skip ...
+
+    def search(self, data: int) -> Node:
+        node = self.head
+        while node != self.tail:
+            if node.data == data:
+                break
+            node = node.next
+        return node
+{% endhighlight %}
+
+
+
 
 ### Insertion
 
 {% highlight python linenos %}
-''' Long Comment '''
-# Iterative
-def main(x: int) -> None:
-    print("Hello World")
+class SinglyLinkedList:
+    # skip ...
 
-# Recursive
+    def insert_at(self, data: int) -> Node:
+        pass
 {% endhighlight %}
 
 TBD
