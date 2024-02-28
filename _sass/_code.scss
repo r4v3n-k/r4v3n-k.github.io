@@ -187,3 +187,9 @@ pre a:only-of-type::before {
         margin: 0;
     }
 }
+
+.plantuml {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}

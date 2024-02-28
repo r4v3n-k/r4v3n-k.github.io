@@ -1,0 +1,50 @@
+@startuml
+
+skinparam ClassAttributeIconSize 0
+class ListNode {
+    +data  :object
+}
+abstract class LinkedList {
+    +empty()  :bool 
+    +size()  :int 
+    +index(object)  :int 
+    +search_by_index(int)  :ListNode 
+    +search(object)  :ListNode
+    +insert_at_head(object)  :None
+    +insert_at_tail(object)  :None
+    +insert(int, object)  :None
+    +delete_at_head()  :ListNode 
+    +delete_at_tail()  :ListNode
+    +delete(int)  :ListNode
+    +iterate()  :list[object]
+}
+LinkedList -r-* ListNode
+
+class SllNode {
+    +next  :ListNode 
+}
+class SinglyLinkedList {
+    -_size  :int
+    +head  :SllNode
+    +tail  :SllNode
+}
+SllNode -u-|> ListNode
+SinglyLinkedList -u-|> LinkedList
+
+SinglyLinkedList "many" --> "1" SllNode
+
+class DllNode {
+    +prev  :ListNode
+    +next  :ListNode
+}
+class DoublyLinkedList {
+    -_size  :int 
+    +head  :DllNode
+    +tail  :DllNode
+}
+DllNode -u-|> ListNode
+DoublyLinkedList -u-|> LinkedList
+
+DoublyLinkedList "many" --> "1" DllNode
+
+@enduml

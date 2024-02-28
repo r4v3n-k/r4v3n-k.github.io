@@ -1,0 +1,111 @@
+@startuml
+
+frame "1" as first {
+    card prev1 [
+        <b>at - 1
+        ====
+        next
+        ----
+        data
+    ]
+    card current1 [
+        <b>at
+        ====
+        next
+        ----
+        data
+    ]
+    card next1 [
+        <b>at + 1
+        ====
+        next
+        ----
+        data
+    ]
+    card new1 #palegreen [
+        <b>New
+        ====
+        next
+        ----
+        data
+    ]
+    prev1 -r-> current1
+    current1 -r-> next1
+    current1 -d- new1 #line:white
+}
+
+frame "2" as second {
+    card prev2 [
+        <b>at - 1
+        ====
+        next
+        ----
+        data
+    ]
+    card current2 [
+        <b>at
+        ====
+        next
+        ----
+        data
+    ]
+    card next2 [
+        <b>at + 1
+        ====
+        next
+        ----
+        data
+    ]
+    card new2 #palegreen [
+        <b>New
+        ====
+        next
+        ----
+        data
+    ]
+    prev2 -r-> current2
+    current2 -r-> next2
+    current2 -d- new2 #line:white
+    new2 -u-> next2 #line:green;line.bold
+}
+
+frame "3" as third {
+    card prev3 [
+        <b>at - 1
+        ====
+        next
+        ----
+        data
+    ]
+    card current3 [
+        <b>at
+        ====
+        next
+        ----
+        data
+    ]
+    card next3 [
+        <b>at + 1
+        ====
+        next
+        ----
+        data
+    ]
+    card new3 #palegreen [
+        <b>New
+        ====
+        next
+        ----
+        data
+    ]
+    prev3 -r-> current3
+    current3 -r-> next3 #line:white
+    current3 -d- new3 #line:white
+    new3 -u-> next3 #line:green;line.bold
+    current3 -d-> new3 #line:green;line.bold
+}
+
+first -r- second #line:white
+second -r- third #line:white
+
+@enduml
