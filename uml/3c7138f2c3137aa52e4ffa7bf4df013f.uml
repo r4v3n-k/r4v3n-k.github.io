@@ -19,7 +19,6 @@ abstract class LinkedList {
     +iterate()  :list[object]
 }
 LinkedList -r-* ListNode
-
 class SllNode {
     +next  :ListNode 
 }
@@ -30,9 +29,7 @@ class SinglyLinkedList {
 }
 SllNode -u-|> ListNode
 SinglyLinkedList -u-|> LinkedList
-
 SinglyLinkedList "many" --> "1" SllNode
-
 class DllNode {
     +prev  :ListNode
     +next  :ListNode
@@ -44,7 +41,6 @@ class DoublyLinkedList {
 }
 DllNode -u-|> ListNode
 DoublyLinkedList -u-|> LinkedList
-
 DoublyLinkedList "many" --> "1" DllNode
 
 @enduml

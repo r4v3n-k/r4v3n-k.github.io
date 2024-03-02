@@ -1,6 +1,5 @@
 @startuml
 
-scale 800 width
 frame "1" as first {
     card prev1 [
         <b>at - 1
@@ -34,7 +33,6 @@ frame "1" as first {
     current1 -r-> next1
     current1 -d- new1 #line:white
 }
-
 frame "2" as second {
     card prev2 [
         <b>at - 1
@@ -66,10 +64,8 @@ frame "2" as second {
     ]
     prev2 -r-> current2
     current2 -r-> next2
-    current2 -d- new2 #line:white
-    new2 -u-> next2 #line:green;line.bold
+    new2 -u-> current2 #line:green;line.bold
 }
-
 frame "3" as third {
     card prev3 [
         <b>at - 1
@@ -99,13 +95,10 @@ frame "3" as third {
         ----
         data
     ]
-    prev3 -r-> current3
-    current3 -r-> next3 #line:white
-    current3 -d- new3 #line:white
-    new3 -u-> next3 #line:green;line.bold
-    current3 -d-> new3 #line:green;line.bold
+    current3 -r-> next3
+    prev3 -d-> new3 #line:green;line.bold
+    new3 -u-> current3 #line:green;line.bold
 }
-
 first -r- second #line:white
 second -r- third #line:white
 
