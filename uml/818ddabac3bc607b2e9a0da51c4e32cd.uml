@@ -29,7 +29,7 @@ class SinglyLinkedList {
 }
 SllNode -u-|> ListNode
 SinglyLinkedList -u-|> LinkedList
-SinglyLinkedList "many" --> "1" SllNode
+SinglyLinkedList --> "*" SllNode
 class DllNode {
     +prev  :ListNode
     +next  :ListNode
@@ -41,6 +41,6 @@ class DoublyLinkedList {
 }
 DllNode -u-|> ListNode
 DoublyLinkedList -u-|> LinkedList
-DoublyLinkedList "many" --> "1" DllNode
+DoublyLinkedList --> "*" DllNode
 
 @enduml

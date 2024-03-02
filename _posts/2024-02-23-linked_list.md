@@ -9,16 +9,19 @@ comments: true
 
 # Concept
 
-A [linked list](https://en.wikipedia.org/wiki/Linked_list) is a data structure that consists of a collection of nodes,
+A [linked list](https://en.wikipedia.org/wiki/Linked_list) is a data structure that consists of a collection of nodes
 whose order is not related to their physical placement in memory.
 
 Each node contains data and pointers which refer to different nodes in the sequence.
-The first node in the list is called as `Head`, and the last node is called as `Tail`.
-There are some variations in a linked list according to what each node points to sequentially.
+The first node in the list is called `Head`, and the last is called `Tail`.
+There are many different variations for a linked list according to what each node points to sequentially.
 
 ## Singly Linked List
 
 There is only one pointer in a node that refers to the next node in the sequence.
+
+The tail node in a singly linked list has no pointer to the next node because the next node does not exist.
+In addition, the singly linked list does not provide access to previous nodes from every node.
 
 {% highlight terminal %}
     
@@ -29,13 +32,13 @@ There is only one pointer in a node that refers to the next node in the sequence
     
 {% endhighlight %}
 
-The last node in a singly linked list has no pointer to the next node because it does not exist.
-
-**It uses less memory but also its implementation is easy, whereas it does not provide access to previous nodes.**
+But, **its implementation is straightforward and uses less memory.**
 
 ## Doubly Linked List
 
-There are two pointers that refers to the previous and next node, respectively.
+A node has two pointers which refer to the previous and next nodes, respectively.
+
+In a doubly linked list, the tail node has no next node, and the head has no previous node.
 
 {% highlight terminal %}
     
@@ -47,11 +50,8 @@ There are two pointers that refers to the previous and next node, respectively.
     
 {% endhighlight %}
 
-Similarly, in a doubly linked list, the last node has no pointer to its next node,
-and the first node has no pointer to its previous node.
-
 **It takes twice as much memory as a singly linked list because of two pointers of each node,
-but it can be traversed backwards.**
+but it can be traversed backward.**
 
 ## Circular Linked List
 
@@ -71,7 +71,7 @@ In a singly linked list, the tail node refers to the head node.
     
 {% endhighlight %}
 
-In a doubly linked list, the head and tail node refer to each other.
+In a doubly linked list, the head and tail nodes refer to each other.
 
 {% highlight terminal %}
     
@@ -88,7 +88,7 @@ In a doubly linked list, the head and tail node refer to each other.
     
 {% endhighlight %}
 
-So, it can be traversed forwards and backwards from anywhere.
+So, it can be traversed forward and backward from anywhere.
 
 ## When to use
 
@@ -99,21 +99,21 @@ So, it can be traversed forwards and backwards from anywhere.
 
 ## Complexity
 
-| Operation | Singly Linked | Doubly Linked |
+| Operation | Singly Linked List | Doubly Linked List |
 |-|-|-|
 | Search | $O(n)$ | $O(n)$ |
 | Insert at head | $O(1)$ | $O(1)$ |
 | Insert at tail | $O(1)$ | $O(1)$ |
-| Insert at middle | $O(n)$ | $O(n)$ |
+| Insert in the middle | $O(n)$ | $O(n)$ |
 | Delete at head | $O(1)$ | $O(1)$ |
 | Delete at tail | $O(n)$ | $O(1)$ |
-| Delete at middle | $O(n)$ | $O(n)$ |
+| Delete in the middle | $O(n)$ | $O(n)$ |
 
 - $n$ is the number of nodes.
 - Peeking(=getting an index) from a linked list takes linear time as it traverses from head to tail.
-- Deleting a node in the middle of a linked list requires to find the previous node of the node to be deleted.
-  - It is why deletion at the tail in a singly linked list takes linear time as it traverses from head to tail.
-  - But, a doubly linked list does not have to do that as the tail node has the pointer to the previous node.
+- Deleting a node in the middle of a linked list requires finding the node's previous node.
+  - It is why deletion at the tail in a singly linked list takes linear time since it should traverse from head to tail to find the previous node.
+  - But, a doubly linked list does not have to do that where the tail node has the pointer to its previous node, so it is possible to access the previous node in constant time.
 
 # Implementation
 
@@ -150,7 +150,7 @@ class SinglyLinkedList {
 }
 SllNode -u-|> ListNode
 SinglyLinkedList -u-|> LinkedList
-SinglyLinkedList "many" --> "1" SllNode
+SinglyLinkedList --> "*" SllNode
 class DllNode {
     +prev  :ListNode
     +next  :ListNode
@@ -162,11 +162,11 @@ class DoublyLinkedList {
 }
 DllNode -u-|> ListNode
 DoublyLinkedList -u-|> LinkedList
-DoublyLinkedList "many" --> "1" DllNode
+DoublyLinkedList --> "*" DllNode
 {% endplantuml %}
 </div>
 
-- [Implementation of both lists in detail](https://github.com/robin-kkk/practical-python/tree/main/dsa/linked_list)
+- [Source Code](https://github.com/robin-kkk/practical-python/tree/main/dsa/linked_list)
 
 ## Singly Linked List
 
@@ -202,7 +202,7 @@ class SinglyLinkedList(LinkedList):
 
 ### Insertion
 
-Notice that what we should do is just to update the pointers of the two nodes.
+Notice that we should update the pointers of the two nodes.
 - A new node
 - The previous node of the node at position we want to add
 
@@ -459,9 +459,9 @@ class SinglyLinkedList(LinkedList):
 
 ### Search
 
-It is interesting to find a specific node more quickly than in a singly linked list
-because a doubly linked list can traverse nodes backwards.
-- Iterate over nodes from the head node if a given index is less than half the number of nodes.
+Finding a specific node more quickly than in a singly linked list is interesting
+because a doubly linked list can traverse nodes backward.
+- If a given index is less than half the number of nodes, then iterate over nodes from the head node.
 - Otherwise, iterate over nodes from the tail node reversely.
 
 {% highlight python linenos %}
@@ -499,7 +499,7 @@ class DoublyLinkedList(LinkedList):
 
 ### Insertion
 
-To insert a new node, we should change the pointers of the below three nodes, which is a little more complex.
+To insert a new node, we should change the pointers of the three nodes below.
 - The node at position we want to add
 - The previous node of the node
 - A new node
@@ -881,18 +881,38 @@ class DoublyLinkedList(LinkedList):
 
 ## Linked List vs. Dynamic Array
 
-Time and Space Complexity
+A [dynamic array](https://en.wikipedia.org/wiki/Dynamic_array) is a data structure that allocates all elements contiguously in memory,
+and keeps a count of the current number of elements.
+If the space reserved for the array is exceeded, a new greater space is reallocated and elements in an old space are copied,
+which is a highly expensive operation.
 
-Why?
+Note that a number $n$ is the number of entities (elements or nodes) in a data structure.
 
-## Reverse
+### Time Complexity
 
-TBD
+| Operation | Dynamic Array | Doubly Linked List |
+|-|-|-|
+| Construction | $O(n)$ | $O(1)$ |
+| Peek(Indexing) at the beginning | $O(1)$ | $O(1)$ |
+| Peek(Indexing) at the end | $O(1)$ | $O(1)$ |
+| Peek(Indexing) in the middle | $O(1)$ | $O(n)$ |
+| Insert/Delete at the beginning | $O(n)$ | $O(1)$ |
+| Insert/Delete at the end | $O(n)$ | $O(1)$ |
+| Insert/Delete in the middle | $O(n)$ | $O(n)$ |
 
-## ZigZag
+- For construction, it is natural to assign a fixed-size of array at first while a linked list starts with the head and tail node.
+- For peeking, random access in the array is possible due to indices, which are different from a linked list that does not have an index.
+- For insertion and deletion, moving elements behind the inserted or deleted element in the array is inevitable.
+However, the linked list does not have to do that; it just needs the change of pointers. 
+Nevertheless, in the linked list, we first need to search for the previous node of the node at the position we insert or delete,
+which takes linear time.
 
-TBD
+### Space Complexity
+
+Both take $O(n)$ space, but its storing ways are different.
+
+In terms of memory space, it's good to read [the comparison between array and list in Python](https://www.geeksforgeeks.org/python-lists-vs-numpy-arrays/).
 
 ## Leetcode
 
-TBD
+- See [my list](https://leetcode.com/list/p1j6e151).
