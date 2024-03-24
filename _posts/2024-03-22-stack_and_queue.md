@@ -11,23 +11,67 @@ comments: true
 
 ## Stack
 
+A [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) is a data structure that serves as
+a collection of elements, each of which is added or removed by the last in, first out (`LIFO`).
+
+![LIFO.png](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lifo_stack.svg/350px-Lifo_stack.svg.png)
+
+As shown above, it is a one-ended linear data structure with providing three main operations:
+- `push()`, `pop`, and `peek()`
+- Peeking is to read the element at the top of a stack.
+
+### When to use
+
 TBD
+
+### Complexity
+
+| Operation | Time |
+|-|-|
+| Push | $O(1)$ |
+| Pop | $O(1)$ |
+| Peek | $O(1)$ |
+| Search | $O(n)$ |
+| Size | $O(1)$ |
+| Removal | $O(n)$ |
+
+- To remove a certain element, scanning through a stack is required.
 
 ## Queue
 
+A [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) is also a linear data structure
+where an elements is added or removed by the first in, first out (`FIFO`).
+
+![FIFO.png](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/220px-Data_Queue.svg.png)
+
+As shown above, it provides four main operations:
+- `enqueue()`, `dequeue()`, `front()` and `back()`
+- The latest queued element positions at the most front of a queue.
+- The most recent queued element positions at the most back of a queue.
+
+### When to use
+
 TBD
 
-## Complexity
+### Complexity
 
-TBD
+| Operation | Time |
+|-|-|
+| Enqueue | $O(1)$ |
+| Dequeue | $O(1)$ |
+| Front | $O(1)$ |
+| Back | $O(1)$ |
+| Search | $O(n)$ |
+| Size | $O(1)$ |
+| Removal | $O(n)$ |
 
-## When to use
-
-TBD
+- To remove a certain element, scanning through a queue is required.
 
 # Implementation
 
 ## Stack Interface
+
+plantuml
 
 {% highlight python linenos %}
 ''' Long Comment '''
@@ -39,6 +83,8 @@ def main(x: int) -> None:
 TBD
 
 ## Queue Interface
+
+plantuml
 
 TBD
 
