@@ -1,0 +1,18 @@
+@startuml
+
+skinparam ClassAttributeIconSize 0
+class Queue {
+    -_linear_ds  :list[object]
+    -_front :int
+    -_back :int
+    +size() :int
+    +is_empty() :bool
+    +enqueue(object) :None
+    +dequeue() :object
+    +peek_front() :object
+    +peek_back() :object
+    +contain(object) :bool
+    +remove(object) :bool
+}
+
+@enduml

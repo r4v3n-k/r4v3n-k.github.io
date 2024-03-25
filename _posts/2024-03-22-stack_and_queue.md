@@ -11,10 +11,12 @@ comments: true
 
 ## Stack
 
-A [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) is a data structure that serves as
-a collection of elements, each of which is added or removed by the last in, first out (`LIFO`).
+A [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) is a data structure that serves as a collection of elements.
+Each is added or removed in the way known as **the last in, first out (LIFO)**, where the most recently added element should be removed first.
 
-![LIFO.png](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lifo_stack.svg/350px-Lifo_stack.svg.png)
+<div class="img_row">
+    <img class="col" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lifo_stack.svg/350px-Lifo_stack.svg.png">
+</div>
 
 As shown above, it is a one-ended linear data structure with providing three main operations:
 - `push()`, `pop`, and `peek()`
@@ -22,75 +24,154 @@ As shown above, it is a one-ended linear data structure with providing three mai
 
 ### When to use
 
-TBD
+1. Used by undo mechanisms in text editors.
+2. Used in compiler syntax checking for matching barckets and braces.
+	- E.g., Given a string made up of the following brackets: `()[]{}`, determine whether the brackets properly match.
+		- `[{}]` -> valid
+		- `(()())` -> valid
+		- `{]` -> invalid
+	- Solution: Push open brackets into a stack. And whenever we find a closed (or reversed) bracket in a bracket sequence, compare the top of a stack to the opposite of the current bracket. If it matches, pop it. Finally, an empty stack means all brackets matched.
+3. Used for modeling a pile of books or plates.
+    - E.g., Tower of Hanoi -> Move piles to the most right so that smaller piles are up in order.
+4. Used behind the scenes to support recursion by keeping track of previous function calls.
+5. Used in a Depth First Search (DFS) graph traversal.
+
+### Interface
+
+{% plantuml %}
+skinparam ClassAttributeIconSize 0
+class Stack {
+    -_linear_ds  :list[object]
+    -_top :int
+    +size() :int
+    +is_empty() :bool
+    +peek() :object
+    +push(object) :None
+    +pop() :object
+    +contain(object) :bool
+    +remove(object) :bool
+}
+{% endplantuml %}
 
 ### Complexity
 
 | Operation | Time |
 |-|-|
+| Size | $O(1)$ |
+| Peek | $O(1)$ |
 | Push | $O(1)$ |
 | Pop | $O(1)$ |
-| Peek | $O(1)$ |
-| Search | $O(n)$ |
-| Size | $O(1)$ |
-| Removal | $O(n)$ |
+| Contain | $O(n)$ |
+| Remove | $O(n)$ |
 
 - To remove a certain element, scanning through a stack is required.
 
 ## Queue
 
 A [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) is also a linear data structure
-where an elements is added or removed by the first in, first out (`FIFO`).
+that serves as a collection of elements in the way, **the first in, first out (FIFO)**,
+where the latest added element should be removed first.
 
-![FIFO.png](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/220px-Data_Queue.svg.png)
+<div class="img_row">
+    <img class="col" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/220px-Data_Queue.svg.png">
+</div>
 
-As shown above, it provides four main operations:
-- `enqueue()`, `dequeue()`, `front()` and `back()`
-- The latest queued element positions at the most front of a queue.
-- The most recent queued element positions at the most back of a queue.
+As shown above, it provides four primary operations:
+- `enqueue()`, `dequeue()`, `peek_front()` and `peek_back()`
+- The latest queued element positions at the front of a queue.
+- The most recent queued element positions at the back of a queue.
 
 ### When to use
 
-TBD
+1. Any waiting line models a queue. E.g., a lineup at a move theatre or a restaurant.
+2. Used for tracking the X most recently added elements.
+3. Web server request management where you want first come first serve.
+4. Used in a Breadth First Search (BFS) graph traversal.
+
+### Interface
+
+{% plantuml %}
+skinparam ClassAttributeIconSize 0
+class Queue {
+    -_linear_ds  :list[object]
+    -_front :int
+    -_back :int
+    +size() :int
+    +is_empty() :bool
+    +enqueue(object) :None
+    +dequeue() :object
+    +peek_front() :object
+    +peek_back() :object
+    +contain(object) :bool
+    +remove(object) :bool
+}
+{% endplantuml %}
 
 ### Complexity
 
 | Operation | Time |
 |-|-|
+| Size | $O(1)$ |
 | Enqueue | $O(1)$ |
 | Dequeue | $O(1)$ |
-| Front | $O(1)$ |
-| Back | $O(1)$ |
-| Search | $O(n)$ |
-| Size | $O(1)$ |
-| Removal | $O(n)$ |
+| Peek | $O(1)$ |
+| Contain | $O(n)$ |
+| Remove | $O(n)$ |
 
 - To remove a certain element, scanning through a queue is required.
 
 # Implementation
 
-## Stack Interface
+## Stack
 
-plantuml
+- [Source Code](https://github.com/robin-kkk/practical-python/tree/main/dsa/stack)
+
+## Queue
+
+- [Source Code](https://github.com/robin-kkk/practical-python/tree/main/dsa/queue)
+
+## Deque
+
+In Python, there is a very useful linear data structure, `deque` which is a bi-directional queue.
+- It allows us to add or remove an element both back and forth.
 
 {% highlight python linenos %}
-''' Long Comment '''
-# This is comment
-def main(x: int) -> None:
-    print("Hello World")
+from collections import deque
+dq =  deque([1, 2, 3])
+dq.append(4) # [1, 2, 3, 4]
+dq.appendleft(0) # [0, 1, 2, 3, 4]
+assert dq.pop() == 4
+assert dq.popleft() == 0
+print(dq) # deque([1, 2, 3])
+
+dq.extend([1, 2, 2])
+print(dq) # deque([1, 2, 3, 1, 2, 2])
+dq.extendleft([4, 5, 6])
+print(dq) # deque([6, 5, 4, 1, 2, 3, 1, 2, 2])
+assert dq.index(1) == 3
+assert dq.count(2) == 3
+
+dq.remove(1)
+print(dq) # deque([6, 5, 4, 2, 3, 1, 2, 2])
+dq.reverse()
+print(dq) # deque([2, 2, 1, 3, 2, 4, 5, 6])
+dq.insert(3, 99)
+assert dq[3] == 99
+print(dq) # deque([2, 2, 1, 99, 3, 2, 4, 5, 6])
+
+dq.rotate(1)
+print(dq) # deque([6, 2, 2, 1, 99, 3, 2, 4, 5])
+dq.rotate(4)
+print(dq) # deque([3, 2, 4, 5, 6, 2, 2, 1, 99])
+
+dq.clear()
 {% endhighlight %}
-
-TBD
-
-## Queue Interface
-
-plantuml
-
-TBD
 
 # Application
 
 ## What is monotonic stack and queue
+
+TBD
 
 ## Leetcode
 
