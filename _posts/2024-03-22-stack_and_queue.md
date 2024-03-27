@@ -169,7 +169,57 @@ dq.clear()
 
 # Application
 
-## What is monotonic stack and queue
+## Monotonic Stack
+
+
+A [monotonic stack](https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/)
+contains elements in monotonically either increasing or decreasing order.
+
+For an increasing order, it should not have a smaller element at top of each element.
+
+{% highlight python lineno %}
+"""
+################################ illustration needs, then code here.
+
+input:
+    arr = [3, 2, 5, 1, 8, 9, 0]
+output:
+    stack = [3, 5, 8, 9]
+                      ^
+                     top
+"""
+def monotonic_increasing_stack(arr: list) -> list:
+    stk = []
+    for x in arr:
+        while stk and stk[-1] > x:
+            stk.pop()
+        stk.append(x)
+    return stk
+{% endhighlight %}
+
+For a decreasing order, it should not have a greater element at top of each element.
+
+{% highlight python lineno %}
+"""
+input:
+    arr = [3, 2, 5, 1, 8, 9, 0]
+output:
+    stack = [3, 2, 1, 0]
+                      ^
+                     top
+"""
+def monotonic_decreasing_stack(arr: list) -> list:
+    stk = []
+    for x in arr:
+        while stk and stk[-1] < x:
+            stk.pop()
+        stk.append(x)
+    return stk
+{% endhighlight %}
+
+The monotonic stack problem is primarily to find the smaller or greater element in an array.
+
+## Monotonic Queue/Deque
 
 TBD
 
