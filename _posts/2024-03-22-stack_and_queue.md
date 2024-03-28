@@ -171,53 +171,84 @@ dq.clear()
 
 ## Monotonic Stack
 
-
 A [monotonic stack](https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/)
 contains elements in monotonically either increasing or decreasing order.
 
 For an increasing order, it should not have a smaller element at top of each element.
+- Iterate a given list of elements one by one. In each iteration,
+  **keep popping greater elements out of a stack until it is empty or its top is smaller than the current element**.
+  Then, push the current element into the stack.
 
-{% highlight python lineno %}
+Note that an increasing monotonic stack is used to find the nearest smaller element for each element.
+ 
+{% highlight python linenos %}
 """
-################################ illustration needs, then code here.
+arr = [3, 2, 4, 1, 5, 7]
 
-input:
-    arr = [3, 2, 5, 1, 8, 9, 0]
-output:
-    stack = [3, 5, 8, 9]
-                      ^
-                     top
+For i=0, stk = [3]
+For i=1, stk = [2] (3 > 2)
+For i=2, stk = [2, 4]
+For i=3, stk = [1] (4 > 1 and 2 > 1)
+For i=4, stk = [1, 5]
+For i=5, stk = [1, 5, 7]
+
+input: [3, 2, 4, 1, 5, 7]
+output: [1, 5, 7]
+               ^
+              top
 """
-def monotonic_increasing_stack(arr: list) -> list:
+def get_monotonic_increasing_stack(arr: list) -> list:
     stk = []
     for x in arr:
         while stk and stk[-1] > x:
+            # Here, the current element is the next smaller element than the top of a stack.
             stk.pop()
+        # Here, the top of a stack is the previous smaller element. 
         stk.append(x)
     return stk
 {% endhighlight %}
 
 For a decreasing order, it should not have a greater element at top of each element.
+- Iterate a given list of elements one by one. In each iteration,
+  **keep popping smaller elements out of a stack until it is empty or its top is greater than the current element**.
+  Then, push the current element into the stack.
 
-{% highlight python lineno %}
+Note that a decreasing monotonic stack is used to find the nearest greater element for each element.
+
+{% highlight python linenos %}
 """
-input:
-    arr = [3, 2, 5, 1, 8, 9, 0]
-output:
-    stack = [3, 2, 1, 0]
-                      ^
-                     top
+arr = [3, 2, 4, 7, 5, 1]
+
+For i=0, stk = [3]
+For i=1, stk = [3, 2]
+For i=2, stk = [4] (2 < 4 and 3 < 4)
+For i=3, stk = [7] (4 < 7)
+For i=4, stk = [7, 5]
+For i=5, stk = [7, 5, 1]
+
+input: [3, 2, 4, 7, 5, 1]
+output: [7, 5, 1]
+               ^
+              top
 """
-def monotonic_decreasing_stack(arr: list) -> list:
+def get_monotonic_decreasing_stack(arr: list) -> list:
     stk = []
     for x in arr:
         while stk and stk[-1] < x:
+            # Here, the current element is the next greater element than the top of a stack.
             stk.pop()
+        # Here, the top of a stack is the previous greater element. 
         stk.append(x)
     return stk
 {% endhighlight %}
 
-The monotonic stack problem is primarily to find the smaller or greater element in an array.
+Notice that the popped elements are not reused.
+
+In summary, the monotonic stack problem is primarily to find **the nearest smaller or greater element** in an array.
+Also, it can be to find the maximum and minimum elements in a certain range and keeps the order of elements in the range.
+For that, we don't need to compare elements one by one again to get those elements if using a stack.
+
+While it takes constant time to read the top of a stack, in memory space, it takes linear time in the worst case.
 
 ## Monotonic Queue/Deque
 
