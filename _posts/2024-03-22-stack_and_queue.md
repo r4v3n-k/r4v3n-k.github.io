@@ -252,11 +252,56 @@ While it takes constant time to read the top of a stack, in memory space, it tak
 
 ## Monotonic Queue/Deque
 
-TBD
+A [monotonic queue](https://www.geeksforgeeks.org/introduction-to-monotonic-queues/)
+a queue that contains elements in monotonically either increasing or decreasing order.
+
+The monotonic queue is usually implemented by a deque (double-ended queue) container
+that allows efficient insertion and deletion of elements from both the front and back of the queue.
+
+For an increasing order, any element smaller than the current element is removed.
+- Iterate a given list of elements one by one. In each iteration,
+  **keep popping greater elements out of the back of a queue until it is empty or the last element is smaller than the current element**.
+  Then, append the current element to the back of the queue.
+- Notice that the last element is the element at the back of the queue, which is where we enqueue a new element.
+  - That is why we should use a deque rather than a queue which only supports popping operation at the front.
+
+Note that an increasing monotonic queue is used to **find the minimum element in a sliding window**.
+
+Also, it can be helpful to solve a dynamic programming problem such as LIS (longest increasing subsequence). 
+
+{% highlight python linenos %}
+def get_monotonic_increasing_deque(arr: list) -> list:
+    dq = deque()
+    for x in arr:
+        while dq and dq[-1] > x:
+            dq.pop()
+        dq.append(x)
+    return list(dq)
+{% endhighlight %}
+
+For a decreasing order, any element greater than the current element is removed.
+- Iterate a given list of elements one by one. In each iteration,
+  **keep popping smaller elements out of the back of a queue until it is empty or the last element is greater than the current element**.
+  Then, append the current element to the back of the queue.
+- Notice that the last element is the element at the back of the queue, which is where we enqueue a new element.
+  - That is why we should use a deque rather than a queue which only supports popping operation at the front.
+
+Note that a decreasing monotonic queue is used to **find the maximum element in a sliding window**.
+
+Also, it can be helpful to solve a dynamic programming problem such as LDS (longest decreasing subsequence). 
+
+{% highlight python linenos %}
+def get_monotonic_decreasing_deque(arr: list) -> list:
+    dq = deque()
+    for x in arr:
+        while dq and dq[-1] < x:
+            dq.pop()
+        dq.append(x)
+    return list(dq)
+{% endhighlight %}
 
 ## Leetcode
 
 - [Monotonic Stack](https://leetcode.com/tag/monotonic-stack/)
 - [Monotonic Queue](https://leetcode.com/tag/monotonic-queue/)
-- See my list related to [Stack]() and [Queue]()
-
+- See my list related to [Stack](https://leetcode.com/list/pfafbwgj) and [Queue](https://leetcode.com/list/mhacd9rd)
