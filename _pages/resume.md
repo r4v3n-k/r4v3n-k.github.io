@@ -1,36 +1,20 @@
 ---
 layout: resume
 permalink: /
-title: Eunjin Kwon
-description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://www.linkedin.com/in/eunjin-kwon-a1636114a/">LinkedIn</a></span></p>
+title: EUNJIN KWON
+description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://www.linkedin.com/in/eunjin-kwon-a1636114a/">LinkedIn</a></span><b>|</b><span>Work Permit (Need)</span></p>
 
 ---
 
+<!-- 
+### Professional Summary
 
-### TECHNICAL SKILLS
+Software Engineer specializing in AI with a focus on MLOps.
+Expert in problem definition, solution articulation, and collaborative ideation.
+Proficient in Kubernetes, distributed data processing, and large-scale ML model management, dedicated to automating and optimizing AI systems for seamless operation.
+-->
 
-<div class="resume-item-title">
-    <h4><b>Languages:</b> Python, Go, C++, SQL, Bash</h4>
-</div>
-
-<div class="resume-item-title">
-    <h4><b>Technologies/Frameworks:</b> FastAPI, Airflow, Kubeflow, Spark</h4>
-</div>
-
-<div class="resume-item-title">
-    <h4><b>Databases:</b> PostgreSQL, Hive, HBase, MySQL, Redis</h4>
-</div>
-
-<div class="resume-item-title">
-    <h4><b>Software and Tools:</b> Git, Github, Postman, Helm, Bazel, Elastic-search, Kibana</h4>
-</div>
-
-<div class="resume-item-title">
-    <h4><b>Platforms:</b> Kubernetes, Docker, Linux, MacOS</h4>
-</div>
-
-
-### WORK EXPERIENCE
+### Employment
 
 <div class="resume-item-title">
     <h4><b>Software Engineer, MLOps, Platform Engineering</b></h4>
@@ -52,13 +36,12 @@ Test:
     2000 records := 0.018 gb = 18 mb ------ single core ( 298 sec ) vs. multi core ( 127 sec ) : improved 57%
     6000 records := 0.05 gb = 50 mb ------- single core ( 560 sec ) vs. multi core ( 117 sec ) : improved 79%
 -->
-
-- Designed and developed a framework to configure ML pipelines with standardized components.
-- Created a RESTful backend server enabling a cloud-based ML system operation for robots.
-- Implemented idle Kubernetes resource elimination algorithms, reducing pipeline operational costs.
-- Constructed a CI/CD pipeline for a core service, diminishing release cycle time by 66%.
-- Developed a data merging application with Apache Spark, improving data extraction time by 57%.
-- Built a custom integration between Apache Airflow and NAVER cloud infrastructure.
+- Collaborated with the Autonomous Driving and Computer Vision research teams to elevate ML and ETL systems to a service level.
+- Created REST APIs to build and maintain Kubeflow pipelines with standardized and reusable components.
+- Implemented automation algorithms to remove idle Kubernetes instances occupying GPU nodes in pipeline runtime or post-completion, reducing operational costs.
+- Built Apache Airflow to run on NAVER cloud infrastructures and a CI/CD pipeline using Helm Chart and Github Action to deploy on an independent environment per research team.
+- Contributed to data pipeline creation and monitoring of multi-cluster operation in Airflow.
+- Improved data extraction time by 57% by developing a data serialization application with Apache Spark and documented the implementation and use.
 
 <div class="resume-item-title">
     <h4><b>Software Engineer, Robot Service, Platform Engineering</b></h4>
@@ -67,8 +50,8 @@ Test:
 </div>
 
 <!-- reduced daily parcel non-delivery rate (6/30 = 0.2 -> 2/30 = 0.07) 13% : 미발송 택배 일 6 of 30 건 발생 -> 2건 발생 -->
-- Focused on backend development with Echo framework and MySQL for the Robot Delivery service.
-- Lessened the daily parcel non-delivery rate by 13% by implementing the notification for parcel managers.
+- Focused on the back-end development of Robot Delivery service with Go and MySQL, refactoring the logging module to keep track of robots inside a building through Webhook.
+- Lessened the daily parcel non-delivery rate by 13% by developing the notification for parcel managers.
 
 <div class="resume-item-title">
     <h4><b>Software Engineer Intern, Machine Learning Platform, AI Research</b></h4>
@@ -76,10 +59,8 @@ Test:
     <h4>March 2021 - April 2021</h4>
 </div>
 
-<!-- 1:1 대화 -> 3번의 조사 -> 2번 이상 false 를 받은 사람 탐색 (abusing people), true dataset 확보 -->
-<!-- 생성된 데이터를 조회하는 인터페이스를 개발하여 연구원들의 실험 시간을 3시간 -> 20분 정도 단축 (SQL 문에 익숙하지 않아서) -->
-- Developed a Python web application to examine the dialogue level of chatbots through AWS MTurk.
-- Streamlined frequent SQL queries on survey data with Web API, reducing data analysis time.
+- Created a web application in Python to examine the dialogue level of chatbots through AWS MTurk.
+- Developed REST APIs that perform queries on examination results in MySQL to simplify data analysis.
 
 <div class="resume-item-title">
     <h4><b>Software Engineer Intern, Speech-To-Text, AI Research</b></h4>
@@ -87,12 +68,28 @@ Test:
     <h4>August 2020 -  November 2020</h4>
 </div>
 
-- Created a normalization tool for large audio data sets. Conducted noise augmentation experiments.
-- Refactored training data fetching methods of the Speech-To-Text model, increasing the accuracy by 0.03%.
-- Automated evaluation process of Speaker Diarization models by multiprocessing programs in Python.
+- Increased model accuracy by 0.03% by developing a data cleansing tool and refactoring a data loader.
+- Streamlined a model evaluation process by writing a multiprocessing program in Python.
 
+### Technical Skills
 
-### EDUCATION
+<div class="resume-item-title">
+    <h4><b>Languages:</b> Python, Go, SQL, C++, Bash</h4>
+</div>
+
+<div class="resume-item-title">
+    <h4><b>Frameworks and Libraries:</b> FastAPI, Airflow, Kubeflow, Spark</h4>
+</div>
+
+<div class="resume-item-title">
+    <h4><b>Databases:</b> PostgreSQL, MySQL, Hive, HBase, Redis</h4>
+</div>
+
+<div class="resume-item-title">
+    <h4><b>Tools:</b> Git, Linux, Docker, Kubernetes, Github (Action, Kanban), Helm, Bazel, Elastic-search, Kibana</h4>
+</div>
+
+### Education
 
 <div class="resume-item-title">
     <h4><b>Bachelor of Science in Computer Science and Engineering</b></h4>
