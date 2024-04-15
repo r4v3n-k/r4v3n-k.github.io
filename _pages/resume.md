@@ -2,7 +2,7 @@
 layout: resume
 permalink: /
 title: EUNJIN KWON
-description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://www.linkedin.com/in/eunjin-kwon-a1636114a/">LinkedIn</a></span><b>|</b><span>Work Permit (Need)</span></p>
+description: <p><span>gej48443@gmail.com</span><b>|</b><span><a href="https://www.linkedin.com/in/eunjin-kwon-a1636114a/">LinkedIn</a></span><b>|</b><span>Work Permit Required</span></p>
 
 ---
 
@@ -14,7 +14,7 @@ Expert in problem definition, solution articulation, and collaborative ideation.
 Proficient in Kubernetes, distributed data processing, and large-scale ML model management, dedicated to automating and optimizing AI systems for seamless operation.
 -->
 
-### Employment
+### Professional Experience
 
 <div class="resume-item-title">
     <h4><b>Software Engineer, MLOps, Platform Engineering</b></h4>
