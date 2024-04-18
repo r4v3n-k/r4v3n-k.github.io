@@ -1,0 +1,16 @@
+@startuml
+
+skinparam ClassAttributeIconSize 0
+class Stack {
+    -_linear_ds  :list[object]
+    -_top :int
+    +size() :int
+    +is_empty() :bool
+    +peek() :object
+    +push(object) :None
+    +pop() :object
+    +contain(object) :bool
+    +remove(object) :bool
+}
+
+@enduml
