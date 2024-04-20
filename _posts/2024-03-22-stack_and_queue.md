@@ -174,12 +174,13 @@ dq.clear()
 A [monotonic stack](https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/)
 contains elements in monotonic order, either increasing or decreasing.
 
-For an increasing order, it should not have a smaller element at the top of each element.
-- Iterate a given list of elements one by one. In each iteration,
-  **keep popping greater elements out of a stack until it is empty or its top is smaller than the current element**.
+In an increasing order, it should have the greatest element at the top in every iteration.
+
+- While iterating an array, in each iteration,
+  **keep popping greater elements out of the stack until it is empty or its top is smaller than the current element**.
   Then, push the current element into the stack.
 
-Note that an increasing monotonic stack is used to find the nearest smaller element for each element.
+Note that the increasing monotonic stack is used to **find the nearest smaller element for each element**.
  
 {% highlight python linenos %}
 """
@@ -208,12 +209,13 @@ def get_monotonic_increasing_stack(arr: list) -> list:
     return stk
 {% endhighlight %}
 
-In a decreasing order, it should not have a greater element at the top of each element.
-- Iterate a given list of elements one by one. In each iteration,
-  **keep popping smaller elements out of a stack until it is empty or its top is greater than the current element**.
+In a decreasing order, it should have the smallest element at the top in every iteration.
+
+- While iterating an array, in each iteration,
+  **keep popping smaller elements out of the stack until it is empty or its top is greater than the current element**.
   Then, push the current element into the stack.
 
-Note that a decreasing monotonic stack is used to find the nearest greater element for each element.
+Note that the decreasing monotonic stack is used to **find the nearest greater element for each element**.
 
 {% highlight python linenos %}
 """
@@ -245,10 +247,9 @@ def get_monotonic_decreasing_stack(arr: list) -> list:
 Notice that the popped elements are not reused.
 
 In summary, the monotonic stack problem primarily aims to **find the nearest smaller or greater element** in an array.
-Also, it can be used to find the maximum and minimum elements in a certain range while keeping the order of elements in the range.
-For that, we do not need to compare elements one by one again to get those elements if using a stack.
-
-While it takes constant time to read the top of a stack, in memory space, it takes linear time in the worst case.
+Also, it can be used to find the maximum or minimum element in a certain range while keeping the order of elements in the range.
+For that, we do not need to compare elements one by one again to find the element we want if using a stack.
+- It takes constant time! But, it takes linear space complexity in the worst case.
 
 ## Monotonic Queue
 
@@ -258,12 +259,13 @@ The monotonic queue is usually implemented by a deque (double-ended queue) conta
 that allows efficient insertion and deletion of elements from both the front and back of the queue.
 
 In an increasing order, the last element (at the back of the deque) greater than the current element is removed.
-While iterating a given list, in each iteration,
-**keep popping greater elements out of the back until it is empty or the last element is smaller than the current element**.
-Then, enqueue the current element.
 
-Keep in mind that an increasing monotonic deque is used to **find the minimum element in a sliding window technique**.
-- The first element in the increasing deque is the minimum value among elements we have seen.
+- While iterating an array, in each iteration,
+  **keep popping greater elements out of the back until it is empty or the last element is smaller than the current element**.
+  Then, enqueue the current element which positions at the front of the queue.
+
+Keep in mind that the increasing monotonic queue is used to **find the minimum element in a sliding window technique**
+because the first element in the queue is the minimum value among elements we have seen.
 
 {% highlight python linenos %}
 """
@@ -292,12 +294,13 @@ def get_monotonic_increasing_deque(arr: list) -> list:
     return list(dq)
 {% endhighlight %}
 
-So, to find all the minimum values in the window given an integer array and a fixed-size window,
-consider the difference between the first element in the deque and the current index.
-- Iterate over the array, and in each iteration,
-  - If the difference is less than the window size, pop the first element out of the front of the deque.
-  - Then, pop greater elements out of the back of the deque, and push the current element.
-  - From the current index greater than the window size, the first element in the deque is always the minimum value.
+Furthermore, to find all the minimum values in a fixed-size window,
+we can consider the difference between the first element in the deque and the current index.
+
+While iterating an array, in each iteration,
+- If the difference is less than the window size, dequeue the first element out of the deque.
+- Then, pop greater elements out of the back of the deque, and push the current element.
+- From the current index greater than the window size, the first element in the deque is always the minimum value.
 
 {% highlight python linenos %}
 def find_minimum_value_of_window(arr: list, window_size: int) -> list:
@@ -321,19 +324,59 @@ def find_minimum_value_of_window(arr: list, window_size: int) -> list:
 Also, it can be helpful to solve a dynamic programming problem such as LIS (longest increasing subsequence).
 
 For instance, when choosing the minimum value among candidates of K subproblems,
-we can use a monotonic deque on `DP[]` array instead of `arr[]`
+we can use a monotonic deque on `DP[]` array instead of `arr[]`.
+- [LeetCode 2944. Minimum Number of Coins for Fruits](https://leetcode.com/problems/minimum-number-of-coins-for-fruits)
+
+{% highlight python linenos %}
+"""
+NOTE: Zero-indexed
+- Be able to skip the next (i+1) elements when taking the i-th element
+
+dp[i] = arr[i] + min(dp[i+1:2*(i+1)])
+"""
+# O(n^2)
+def find_minimum_value_of_dp(arr: list) -> int:
+    n = len(prices)
+    dp = [int(1e9)]*(n+1)
+    dp[n] = 0
+    for i in range(n-1, -1, -1):
+        j = min(n, 2*(i+1))
+        dp[i] = prices[i] + min(dp[i+1:j+1])
+
+# O(n)
+def find_minimum_value_of_dp_optimized(arr: list) -> int:
+    n = len(prices)
+    dp = [0]*(n+1)
+    inc_dq = deque([n])
+    # Slide window from right to left.
+    for i in range(n-1, -1, -1):
+        # Shrink the window.
+        j = min(n, 2*(i+1))
+        while inc_dq[0] > j:
+            inc_dq.popleft()
+        # dp[inc_dq[0]] := the minimum value in the current window. 
+        dp[i] = arr[i] + dp[inc_dq[0]]
+        # Expand the window.
+        while inc_dq and dp[inc_dq[-1]] > dp[i]:
+            inc_dq.pop()
+        inc_dq.append(i)
+    return dp[0]
+{% endhighlight %}
 
 Another instance is that the window has a constraint (not a fixed-length):
 - The sum of elemetns in the window should equal to a given integer.
 - The sum of elements in the window should be less/greater than a given integer.
 
-For that, most of the time we have to find the maximum or minimum length of the window that satisfies the problem condition.
-- When shrinking the window, consider whether the present window satisfies the condition.
+With that, most problems asks us how to find:
+- the maximum or minimum length of the window that satisfies the constraint.
+- a specific window that satisfies the constraint (Here is only one single window)
+
+Finally, it needs to pay attention to when shrinking the window from the left.
+- Need to check whether the current window satisfies a given constraint.
+- If it is, that window is one of candidates to our solution.
+- [LeetCode 862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k)
 
 {% highlight python linenos %}
-"""
-ref: https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k
-"""
 def find_minimum_window_with_sum_at_least_k(arr: list[int], k: int) -> list:
     n = len(arr)
 
@@ -358,11 +401,12 @@ def find_minimum_window_with_sum_at_least_k(arr: list[int], k: int) -> list:
 {% endhighlight %}
 
 In a decreasing order, the last element (at the back of the deque) smaller than the current element is removed.
-While iterating a given list, in each iteration,
-**keep popping smaller elements out of the back until it is empty or the last element is greater than the current element**.
-Then, enqueue the current element.
 
-Note that a decreasing monotonic queue is used to **find the maximum element in a sliding window**.
+- While iterating an array, in each iteration,
+  **keep popping smaller elements out of the back until it is empty or the last element is greater than the current element**.
+  Then, enqueue the current element which positions at the front of the queue.
+
+Note that the decreasing monotonic queue is used to **find the maximum element in a sliding window**.
 - The first element in the decreasing deque is the maximum value among elements we have seen.
 
 {% highlight python linenos %}
@@ -392,10 +436,8 @@ def get_monotonic_decreasing_deque(arr: list) -> list:
     return list(dq)
 {% endhighlight %}
 
-Also, it can be helpful to solve a dynamic programming problem such as LDS (longest decreasing subsequence).
-
-For instance, when choosing the maximum value among candidates of K subproblems,
-we can use a monotonic deque on `DP[]` array instead of `arr[]`
+Similarly to the increasing queue, to find all the maximum values in a fixed-size window,
+we can consider the difference between the first element in the deque and the current index.
 
 {% highlight python linenos %}
 def find_maximum_value_of_window(arr: list, window_size: int) -> list:
@@ -416,10 +458,15 @@ def find_maximum_value_of_window(arr: list, window_size: int) -> list:
     return ans
 {% endhighlight %}
 
-Some of the times we encounter when using both monotonic increasing and decreasing deque such as:
-- The absolute difference between any two elements in the window should be less/greater or equal to than a given integer.
-- The maximum absolute difference can be calculated by (the maximum value - the minimum value) in the window.
-- [LeetCode 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit)
+Also, it can be helpful to solve a dynamic programming problem such as LDS (longest decreasing subsequence).
+
+Similary to using an increasing deque, when choosing the maximum value among candidates of K subproblems,
+we can use a monotonic deque on `DP[]` array instead of `arr[]`
+
+Sometimes, we encounter problems to be solved with both types of deque such as:
+1. The absolute difference between any two elements in the window should be less/greater or equal to than a given integer.
+2. The maximum absolute difference can be calculated by (the maximum value - the minimum value) in the window.
+   - [LeetCode 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit)
 
 See the types using a sliding window techinque.
 - [GeeksForGeeks: Window Sliding Technique](https://www.geeksforgeeks.org/window-sliding-technique/)
