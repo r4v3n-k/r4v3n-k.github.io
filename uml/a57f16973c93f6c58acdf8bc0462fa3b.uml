@@ -1,0 +1,80 @@
+@startuml
+
+card "Min Heap" {
+    rectangle "Step 1" as r1 {
+        usecase "10" as t1n1
+        usecase "50" as t1n2
+        usecase "30" as t1n3
+        usecase "60" as t1n4 #tomato
+        usecase "80" as t1n5
+        usecase "100" as t1n6
+        usecase "40" as t1n7 #lightblue
+
+        t1n1 -d-> t1n2
+        t1n1 -d-> t1n3
+
+        t1n2 -d-> t1n4
+        t1n2 -d-> t1n5
+
+        t1n3 -d-> t1n6
+        t1n3 -d-> t1n7
+    }
+
+    rectangle "Step 2" as r2 {
+        usecase "10" as t2n1
+        usecase "50" as t2n2
+        usecase "30" as t2n3
+        usecase "40" as t2n4 #lightblue
+        usecase "80" as t2n5
+        usecase "100" as t2n6
+        usecase "60" as t2n7 #tomato
+
+        t2n1 -d-> t2n2
+        t2n1 -d-> t2n3
+
+        t2n2 -d-> t2n4
+        t2n2 -d-> t2n5
+
+        t2n3 -d-> t2n6
+        t2n3 -d-> t2n7
+    }
+
+    rectangle "Step 3" as r3 {
+        usecase "10" as t3n1
+        usecase "50" as t3n2
+        usecase "30" as t3n3
+        usecase "40" as t3n4 #lightblue
+        usecase "80" as t3n5
+        usecase "100" as t3n6
+
+        t3n1 -d-> t3n2
+        t3n1 -d-> t3n3
+
+        t3n2 -d-> t3n4
+        t3n2 -d-> t3n5
+
+        t3n3 -d-> t3n6
+    }
+
+    rectangle "Step 4" as r4 {
+        usecase "10" as t4n1
+        usecase "40" as t4n2 #lightblue
+        usecase "30" as t4n3
+        usecase "50" as t4n4
+        usecase "80" as t4n5
+        usecase "100" as t4n6
+
+        t4n1 -d-> t4n2
+        t4n1 -d-> t4n3
+
+        t4n2 -d-> t4n4
+        t4n2 -d-> t4n5
+
+        t4n3 -d-> t4n6
+    }
+    r1 --> r2 #white
+    r2 --> r3 #white
+    r3 --> r4 #white
+}
+
+@enduml
