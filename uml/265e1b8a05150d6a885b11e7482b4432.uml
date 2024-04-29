@@ -1,0 +1,26 @@
+@startuml
+
+skinparam ClassAttributeIconSize 0
+class PriorityQueue {
+    -_size  :int
+    -_capacity  :int
+    -_heap  :list[object]
+    -_map  :dict[object, set[int]]
+    -_less  :function
+    -_add_map(object, int)  :None
+    -_remove_map(object, int)  :None
+    -_swap(int, int)  :None
+    -_swim_up(int)  :None
+    -_sink_down(int)  :None
+    +peek()  :object
+    +poll()  :object
+    +add(object)   :None
+    +remove(object)  :None
+    +remove_at(int)  :object
+    +contain(object)  :bool
+    +is_empty()  :bool
+    +size()  :int
+    +clear()  :None
+}
+
+@enduml

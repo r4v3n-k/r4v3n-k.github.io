@@ -1,0 +1,79 @@
+@startuml
+
+card "Complete Binary Tree (O)\nFull Binary Tree (O)" {
+    usecase "1" as t1n1
+    usecase "2" as t1n2
+    usecase "3" as t1n3
+    usecase "4" as t1n4
+    usecase "5" as t1n5
+    usecase "6" as t1n6
+    usecase "7" as t1n7
+
+    t1n1 -d-> t1n2
+    t1n1 -d-> t1n3
+
+    t1n2 -d-> t1n4
+    t1n2 -d-> t1n5
+
+    t1n3 -d-> t1n6
+    t1n3 -d-> t1n7
+}
+
+card "Complete Binary Tree (O)\nFull Binary Tree (X)" {
+    usecase "1" as t2n1
+    usecase "2" as t2n2
+    usecase "3" as t2n3
+    usecase "4" as t2n4
+    usecase "5" as t2n5
+    usecase "6" as t2n6
+    usecase "7" as t2n7 #white;line:white;text:white
+
+    t2n1 -d-> t2n2
+    t2n1 -d-> t2n3
+
+    t2n2 -d-> t2n4
+    t2n2 -d-> t2n5
+
+    t2n3 -d-> t2n6
+    t2n3 -d-> t2n7 #line:white
+}
+
+card "Complete Binary Tree (X)\nFull Binary Tree (O)" {
+    usecase "1" as t3n1
+    usecase "2" as t3n2
+    usecase "3" as t3n3
+    usecase "4" as t3n4 #white;line:white;text:white
+    usecase "5" as t3n5 #white;line:white;text:white
+    usecase "6" as t3n6
+    usecase "7" as t3n7
+
+    t3n1 -d-> t3n2
+    t3n1 -d-> t3n3
+
+    t3n2 -d-> t3n4 #line:white
+    t3n2 -d-> t3n5 #line:white
+
+    t3n3 -d-> t3n6
+    t3n3 -d-> t3n7
+}
+
+card "Complete Binary Tree (X)\nFull Binary Tree (X)" {
+    usecase "1" as t4n1
+    usecase "2" as t4n2
+    usecase "3" as t4n3
+    usecase "4" as t4n4
+    usecase "5" as t4n5
+    usecase "6" as t4n6 #white;line:white;text:white
+    usecase "7" as t4n7
+
+    t4n1 -d-> t4n2
+    t4n1 -d-> t4n3
+
+    t4n2 -d-> t4n4
+    t4n2 -d-> t4n5
+
+    t4n3 -d-> t4n6 #line:white
+    t4n3 -d-> t4n7
+}
+
+@enduml
